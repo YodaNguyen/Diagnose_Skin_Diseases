@@ -1,0 +1,10 @@
+tensorflow==2.11.1
+tensorflowjs==3.21.0
+keras
+opencv-python
+pillow
+flask
+flask-cors
+torch 
+torchvision 
+nltk

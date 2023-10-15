@@ -1,0 +1,971 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Xin chào", "Chào", "Bạn làm gì đó", "Có ai ở đây không", "Chào bạn", "Một ngày tốt lành", "Có ai ở đây không", "Hi", "Hello"
+      ],
+      "responses": [
+        "Xin chào, tôi có thể giúp gì cho bạn ?",
+        "Chào bạn, tôi có thể giúp gì ?"
+      ]
+    },
+
+
+
+    {
+      "tag": "goodbye",
+      "patterns": ["Tạm biệt", "Chào hẹn gặp lại", "Bye"],
+      "responses": [
+        "Hẹn gặp bạn lần sau, hân hạnh được giúp đỡ bạn",
+        "Xin chào tạm biệt, rất vui vì có ích cho bạn",
+        "Chào tạm biệt, hẹn gặp lại bạn"
+      ]
+    },
+
+
+
+    {
+      "tag": "bach_bien_define",
+      "patterns": ["Bệnh bạch biến", "Bạch biến là bệnh gì", "Bạch biến là bệnh như thế nào"],
+      "responses": [
+        "Bạch biến là một tổn thương mất tế bào sắc tố da dẫn đến vùng da bị giảm sắc tố với nhiều kích cỡ khác nhau. Đây chính là một căn bệnh da liễu chỉ xuất hiện khi các sắc tố da đã bị phá hủy và làm thay đổi màu sắc làn da của người bệnh."
+      ]
+    },
+    {
+      "tag": "bach_bien_symptom",
+      "patterns": ["Triệu chứng bệnh bạch biến là gì", "Dấu hiệu bệnh bạch biến là gì", "Khi bị bạch biến thì xuất hiện những dấu hiệu triệu chứng như thế nào"],
+      "responses": [
+        "Một trong những triệu chứng phổ biến nhất của căn bệnh này chính là các dát, các mảng trắng có giới hạn rõ ràng. Những vùng da này bị mất sắc tố, khác với màu của những vùng da ở xung quanh. Nguyên nhân chính ở đây có thể là do các tế bào sắc tố ở những vùng da này đã dừng hoạt động. Các khu vực dễ xuất hiện những mảng bạch biến điển hình là các vùng hở, bị phơi nhiễm với ánh sáng mặt trời, cụ thể là tay, chân, mặt hoặc môi."
+      ]
+    },
+    {
+      "tag": "bach_bien_treat",
+      "patterns": ["Điều trị bệnh bạch biến như thế nào", "Bệnh bạch biến có thể được giải quyết như thế nào", "Làm sao để điều trị bệnh bạch biến"],
+      "responses": [
+        "Bảo vệ và sử dụng thuốc chống nắng cho các khu vực bị ảnh hưởng khỏi ánh sáng mặt trời; bôi thuốc corticosteroid và calcipotriene tại chỗ. Bệnh bạch biến có thể là một thách thức để quản lý; Sự tái tạo và duy trì sắc tố ban đầu có thể không thể đoán trước được. Tất cả các vùng mất sắc tố dễ cháy nắng nghiêm trọng và phải được bảo vệ bằng quần áo hoặc kem chống nắng."
+      ]
+    },
+
+
+
+    {
+      "tag": "bong_nuoc_pemphigoid_define",
+      "patterns": ["Bệnh bọng nước pemphigoid", "Bọng nước pemphigoid là bệnh gì", "Bọng nước pemphigoid là bệnh như thế nào"],
+      "responses": [
+        "Pemphigoid bọng nước là bệnh lý da tự miễn mạn tính dẫn đến các tổn thương bọng nước toàn thân, ngứa và đau đớn ở những bệnh nhân cao tuổi."
+      ]
+    },
+    {
+      "tag": "bong_nuoc_pemphigoid_symptom",
+      "patterns": ["Triệu chứng bệnh bọng nước pemphigoid là gì", "Dấu hiệu bệnh bọng nước pemphigoid là gì", "Khi bị bọng nước pemphigoid thì xuất hiện những dấu hiệu triệu chứng như thế nào"],
+      "responses": [
+        "Một số triệu chứng của bệnh bọng nước pemphigoid có thể kể đến như: Tổn thương đa dạng, ban đỏ phù nề, hình vòng, màu đỏ sẫm, có hoặc không có mụn nước ở xung quanh. Hiếm khi, bọng nước nhỏ có thể xuất hiện ở niêm mạc. Tăng bạch cầu trung tính và bạch cầu ái toan là phổ biến, nhưng sốt thì rất hiếm."
+      ]
+    },
+    {
+      "tag": "bong_nuoc_pemphigoid_treat",
+      "patterns": ["Điều trị bệnh bọng nước pemphigoid như thế nào", "Bệnh bọng nước pemphigoid có thể được giải quyết như thế nào", "Làm sao để điều trị bệnh bọng nước pemphigoid"],
+      "responses": [
+        "Nếu người bệnh có diện thương tổn rộng, có thể chỉ định nhập viện điều trị nội trú, chăm sóc các bọng nước, các vết trợt da. Các thuốc điều trị như: thuốc bôi steroid loại mạnh trong thể khu trú (clobetasol proprionate); thuốc bôi steroid loại trung bình và kem dưỡng ẩm để giảm ngứa, giảm khô da; Steroid toàn thân; kháng sinh cho nhiễm khuẩn thứ phát; các thuốc giảm đau, các thuốc khác..."
+      ]
+    },
+
+
+
+    {
+      "tag": "bong_nuoc_pemphigus_define",
+      "patterns": ["Bệnh bọng nước pemphigus", "Bọng nước pemphigus là bệnh gì", "Bọng nước pemphigus là bệnh như thế nào"],
+      "responses": [
+        "Bọng nước Pemphigus thông thường khá hiếm gặp (dễ gây nhầm lẫn với bệnh bọng nước Pemphigoid thông thường-một bệnh da có thể tự miễn), có thể gây tử vong, đặc trưng bởi các vết bỏng trong da và sự ăn mòn trên bề mặt da rõ ràng và màng nhầy."
+      ]
+    },
+    {
+      "tag": "bong_nuoc_pemphigus_symptom",
+      "patterns": ["Triệu chứng bệnh bọng nước pemphigus là gì", "Dấu hiệu bệnh bọng nước pemphigus là gì", "Khi bị bọng nước pemphigus thì xuất hiện những dấu hiệu triệu chứng như thế nào"],
+      "responses": [
+        "Bọng nước nông, là thương tổn cơ bản của pemphigus thông thường, gây ra tình trạng trợt ở da, miệng. Khoảng một nửa bệnh nhân có thương tổn trợt ở miệng, tạo thành các đợt tổn thương đau, mạn tính. Thông thường, tổn thương miệng thường xuất hiện trước tổn thương da. Chứng khó nuốt và ăn uống kém là phổ biến vì các tổn thương cũng có thể xảy ra ở nửa trên thực quản. Bọng nước trên da thường xuất hiện ở da bình thường, vỡ, và để lại vùng có vẩy tiết. Ít khi có ngứa. Tổn thương trợt thường bị nhiễm trùng. Nếu tổn thương diện rộng, có thể mất dịch và điện giải nhiều."
+      ]
+    },
+    {
+      "tag": "bong_nuoc_pemphigus_treat",
+      "patterns": ["Điều trị bệnh bọng nước pemphigus như thế nào", "Bệnh bọng nước pemphigus có thể được giải quyết như thế nào", "Làm sao để điều trị bệnh bọng nước pemphigus"],
+      "responses": [
+        "Nếu không điều trị, pemphigus thông thường thường gây tử vong, thường là trong vòng 5 năm khởi phát bệnh. Liệu pháp corticosteroid và liệu pháp ức chế miễn dịch toàn thân đã cải thiện được tiên lượng, nhưng tử vong vẫn có thể là kết quả của các biến chứng của điều trị. Điều trị Pemphigus thông thường bằng: Corticosteroid, uống hoặc tĩnh mạch; đôi khi thuốc ức chế miễn dịch; đôi khi trao đổi huyết tương hoặc globulin miễn dịch truyền tĩnh mạch (IVIG). Chuyển đến một bác sĩ da liễu chuyên về điều trị bệnh này. Việc nhập viện là bắt buộc đối với tất cả các trường hợp kể cả là những trường hợp nhẹ nhất. Làm sạch và đắp gạc lên tổn thương da cũng tương tự như đã làm với điều trị bỏng nặng (ví dụ, cách ly, hydrocolloid hoặc bạc sulfadiazine băng)."
+      ]
+    },
+
+
+
+    {
+      "tag": "choc_define",
+      "patterns": ["Bệnh chốc", "Chốc là bệnh gì", "Chốc là bệnh như thế nào"],
+      "responses": [
+        "Bệnh chốc (impetigo) là một nhiễm khuẩn nông thường gặp ở da, đặc trưng bởi mụn nước, bọng nước hóa mủ nhanh, sau đó dập vỡ để lại các vết trợt nông và đóng vảy tiết màu mật ong. Thuật ngữ chốc hóa (impetiginisation) được dùng để chỉ các nhiễm trùng nông thứ phát của một vết thương hoặc một tình trạng da nhất định."
+      ]
+    },
+    {
+      "tag": "choc_symptom",
+      "patterns": ["Triệu chứng bệnh chốc là gì", "Dấu hiệu bệnh chốc là gì", "Khi bị chốc thì xuất hiện những dấu hiệu triệu chứng như thế nào"],
+      "responses": [
+        "Người bệnh bị chốc có thể sốt, mệt mỏi, nổi hạch. Chốc không có bọng nước thường bắt đầu là một dát hồng, tiến triển thành mụn nước, bọng nước hóa mủ nhanh, mau chóng dập vỡ để lại các vết xước đóng vảy tiết màu vàng mật ong. Khi vảy tiết bong ra để lại nền da đỏ ẩm, khi lành để lại dát thâm."
+      ]
+    },
+    {
+      "tag": "choc_treat",
+      "patterns": ["Điều trị bệnh chốc như thế nào", "Bệnh chốc có thể được giải quyết như thế nào", "Làm sao để điều trị bệnh chốc"],
+      "responses": [
+        "Một số cách điều trị bệnh chốc lở và bệnh chốc loét có thể kể đến như sau: Sử dụng thuốc bôi tại chỗ như mupirocin, retapamulin, hay axit fusidic; Đôi khi sử dụng thuốc kháng sinh đường uống. Vùng tổn thương phải được rửa nhẹ nhàng bằng xà phòng và nước vài lần một ngày để loại bỏ vẩy tiết."
+      ]
+    },
+
+
+
+    {
+      "tag": "chung_do_mat_rosacea_define",
+      "patterns": ["Bệnh chứng đỏ mặt Rosacea", "Chứng đỏ mặt Rosacea là bệnh gì", "Chứng đỏ mặt Rosacea là bệnh như thế nào"],
+      "responses": [
+        "Chứng đỏ mặt (Rosacea) là một rối loạn dạng trứng cá mạn tính của nang lông tuyến bã vùng mặt đi kèm với tính năng phản ứng của mao mạch với nhiệt, sức nóng, xuất hiện cơn đỏ bừng mặt và về sau là giãn mao mạch."
+      ]
+    },
+    {
+      "tag": "chung_do_mat_rosacea_symptom",
+      "patterns": ["Triệu chứng bệnh chứng đỏ mặt Rosacea là gì", "Dấu hiệu bệnh chứng đỏ mặt Rosacea là gì", "Khi bị chứng đỏ mặt Rosacea thì xuất hiện những dấu hiệu triệu chứng như thế nào"],
+      "responses": [
+        "Một số triệu chứng của chứng đỏ mặt Rosacea bao gồm: Ửng đỏ (là hiện tượng da trở nên đỏ trong một thời gian ngắn, thường là vài phút. Ửng đỏ chủ yếu xuất hiện ở vùng mặt, đôi khi có thể lan xuống cổ và ngực, một số trường hợp đỏ mặt xuất hiện kèm cảm giác nóng bừng); Hồng ban kéo dài (Hồng ban xuất hiện dưới dạng như một vùng cháy nắng tồn tại kéo dài, và trong nhiều trường hợp khiến bệnh nhân bị người khác tưởng nhầm là người lạm dụng rượu. Hồng ban thường ở vị trí má, mũi và cằm, nhưng cũng có thể ở trán, cổ và ngực); Giãn mạch máu (theo thời gian các mạch máu ở da trở nên giãn ra và có thể nhìn thấy rõ); Nốt sần và mụn mủ. Các triệu chứng khác có thể gặp bao gồm: Da nhạy cảm (Cảm giác nóng bỏng, ngứa, và đau); Da khô ráp; Sưng mặt..."
+      ]
+    },
+    {
+      "tag": "chung_do_mat_rosacea_treat",
+      "patterns": ["Điều trị bệnh chứng đỏ mặt Rosacea như thế nào", "Bệnh chứng đỏ mặt Rosacea có thể được giải quyết như thế nào", "Làm sao để điều trị bệnh chứng đỏ mặt Rosacea"],
+      "responses": [
+        "Với chứng đỏ mặt Rosacea, trong trường hợp bị nhẹ, có thể được điều trị bằng một loại thuốc kháng sinh dạng kem (metronidazole, clindamycin, erythromycin) hoặc uống kháng sinh. Bệnh rosacea sẽ thường xuyên tái phát và bạn có thể phải cần uống thuốc thường xuyên để kiểm soát các triệu chứng. Điều trị sớm có thể làm chậm tiến trình bệnh. Trong trường hợp nghiêm trọng hơn, bạn cần phải kết hợp các loại thuốc. Một vài trường hợp hiếm, mũi sưng nặng cần phẫu thuật hoặc điều trị bằng laser. Điều trị laser đôi khi được dùng cho các tĩnh mạch nổi lớn và đỏ."
+      ]
+    },
+
+
+
+    {
+      "tag": "day_sung_anh_sang_define",
+      "patterns": ["Bệnh dày sừng ánh sáng", "Dày sừng ánh sáng là bệnh gì", "Dày sừng ánh sáng là bệnh như thế nào"],
+      "responses": [
+        "Dày sừng ánh sáng là một mảng hoặc vết sưng gồ ghề, có vảy trên da. Nó còn được gọi là dày sừng quang hóa. Dày sừng quang hóa rất phổ biến và nhiều người mắc phải. Chúng gây ra bởi tia cực tím (UV) gây hại cho da. Một số dày sừng actinic có thể biến thành ung thư da tế bào vảy. Vì thế, các tổn thương này thường được gọi là tiền ung thư. Chúng không nguy hiểm đến tính mạng, nhưng nếu không được phát hiện và điều trị sớm chúng có thể phát triển thành ung thư da."
+      ]
+    },
+    {
+      "tag": "day_sung_anh_sang_symptom",
+      "patterns": ["Triệu chứng bệnh dày sừng ánh sáng là gì", "Dấu hiệu bệnh dày sừng ánh sáng là gì", "Khi bị dày sừng ánh sáng thì xuất hiện những dấu hiệu triệu chứng như thế nào"],
+      "responses": [
+        "Dày sừng ánh sáng có nhiều dạng khác nhau. Những dấu hiệu và triệu chứng của bệnh bao gồm: Các mảng da thô ráp, khô hoặc có vảy, thường có đường kính dưới 2,5 cm. Miếng dán hoặc vết sưng từ phẳng đến hơi nhô lên trên lớp da trên cùng. Trong một số trường hợp, bề mặt cứng, giống mụn. Các biến thể màu sắc, bao gồm hồng, đỏ hoặc nâu. Ngứa, rát, chảy máu hoặc đóng vảy. Trên các vùng da tiếp xúc với ánh nắng mặt trời như vùng đầu, cổ, cánh tay và bàn tay xuất hiện các mảng hay vết sưng mới."
+      ]
+    },
+    {
+      "tag": "day_sung_anh_sang_treat",
+      "patterns": ["Điều trị bệnh dày sừng ánh sáng như thế nào", "Bệnh dày sừng ánh sáng có thể được giải quyết như thế nào", "Làm sao để điều trị bệnh dày sừng ánh sáng"],
+      "responses": [
+        "Các mảng da bị tổn thương này đôi khi tự biến mất nhưng sẽ xuất hiện lại nếu bạn tiếp tục để da tiếp xúc nhiều với ánh nắng mặt trời. Tuy vậy, bác sĩ không biết được chính xác tổn thương nào trên da có khả năng phát triển thành ung thư nên các mảng sừng hóa này thường được điều trị hết để phòng ngừa. Sử dụng thuốc, một vài loại thuốc kê đơn được bác sĩ chỉ định trong điều trị dày sừng do ánh sáng gồm có: Kem bôi chứa fluorouracil, Kem bôi chứa imiquimod, Gel ingenol mebutate, Gel chứa diclofenac... Những loại thuốc bôi ngoài da này có thể gây đỏ, đóng vảy hoặc nóng rát ở da trong vòng vài tuần. Phẫu thuật và các phương thức khác: Liệu pháp đông lạnh (các mảng da bị tổn thương này có thể được loại bỏ bằng cách dùng nitơ lỏng để đóng băng chúng); Cạo bỏ vùng da tổn thương (bác sĩ sẽ dùng một dụng cụ đặc biệt để cạo/ nạo đi các tế bào da đã bị biến đổi); Liệu pháp quang động (PDT) (phương pháp này sử dụng một chất hóa học nhạy cảm với ánh sáng bôi lên vùng da bị tổn thương rồi chiếu dưới một nguồn sáng đặc biệt và trong quá trình đó, các mảng da bị biến đổi sẽ bị phá hủy). Khi được điều trị sớm, hầu hết các mảng da tổn thương đều được giải quyết sạch sẽ trước khi phát triển thành ung thư da. Nếu không điều trị, một trong số các vùng da này có khả năng tiến triển thành ung thư biểu mô tế bào vảy."
+      ]
+    },
+
+
+
+    {
+      "tag": "day_sung_tiet_ba_define",
+      "patterns": ["Bệnh dày sừng tiết bã", "Dày sừng tiết bã là bệnh gì", "Dày sừng tiết bã là bệnh như thế nào"],
+      "responses": [
+        "Dày sừng tiết bã (tên tiếng Anh là Seborrheic Keratosis) là sự tăng sinh da không phải do ung thư, đây là một trong những bệnh phổ biến nhất ở người lớn tuổi. Dày sừng tiết bã thường xuất hiện dưới dạng vết tăng sinh da có màu nâu, đen hay màu sáng trên mặt, ngực, vai hoặc lưng. Chúng có dạng hình sáp, sẹo, hơi tăng sinh. Dày sừng tiết bã không trở thành ung thư và không được cho là có liên quan đến ánh nắng mặt trời, nhưng chúng có thể trông giống như ung thư da."
+      ]
+    },
+    {
+      "tag": "day_sung_tiet_ba_symptom",
+      "patterns": ["Triệu chứng bệnh dày sừng tiết bã là gì", "Dấu hiệu bệnh dày sừng tiết bã là gì", "Khi bị dày sừng tiết bã thì xuất hiện những dấu hiệu triệu chứng như thế nào"],
+      "responses": [
+        "Dày sừng tiết bã thường trông giống như sáp hoặc mụn cóc. Nó thường xuất hiện trên mặt, ngực, vai hoặc lưng của cơ thể. Bạn có thể bị một hay nhiều những vết dày sừng tiết bã. Các biểu hiện thường là: Đa dạng màu sắc, thường là những vết màu sáng đến nâu hoặc đen; Hình tròn hoặc hình bầu dục; Nhìn như “dán vào”; Phẳng hoặc hơi nhô cao với bề mặt có vảy; Kích thước từ rất nhỏ đến hơn 1 inch (2,5 cm); Có thể gây ngứa. Dày sừng tiết bả thường không đau, nhưng chúng có thể trở nên khó chịu tùy thuộc vào kích cỡ và vị trí của chúng. Hãy cẩn thận, không để chà, cào hoặc chọc chúng. Điều này có thể dẫn đến chảy máu, sưng và trong một số ít trường hợp có thể gây nhiễm trùng."
+      ]
+    },
+    {
+      "tag": "day_sung_tiet_ba_treat",
+      "patterns": ["Điều trị bệnh dày sừng tiết bã như thế nào", "Bệnh dày sừng tiết bã có thể được giải quyết như thế nào", "Làm sao để điều trị bệnh dày sừng tiết bã"],
+      "responses": [
+        "Tổn thương không phải là tiền ung thư và không cần điều trị trừ khi chúng gây kích thích, ngứa, hoặc gây khó chịu về mặt thẩm mỹ. Tùy theo tình trạng của từng bệnh nhân, bác sĩ sẽ lựa chọn phương pháp phù hợp để loại bỏ, các tổn thương có thể được loại bỏ với ít hoặc không có sẹo bằng phương pháp áp lạnh băng nitơ lỏng cryotherapy (có thể gây ra chứng giảm sắc tố) hoặc bằng điện và nạo sau khi tiêm lidocaine cục bộ."
+      ]
+    },
+
+
+
+    {
+      "tag": "gai_den_define",
+      "patterns": ["Bệnh gai đen", "Gai đen là bệnh gì", "Gai đen là bệnh như thế nào"],
+      "responses": [
+        "Bệnh gai đen là một trong những bệnh lý về da, thường gặp ở những người bị bệnh tiểu đường hoặc béo phì. Tình trạng bệnh diễn biến từ màu nâu nhạt đến đen, xuất hiện ở vùng cổ, nách, háng hay dưới bầu ngực. Bằng mắt thường chúng ta có thể nhận thấy được sự thay đổi màu sắc ở vị trí mắc bệnh, lúc đầu là màu xám giống như bị dính bẩn, sau đó đổi thành màu đen và sờ thấy xuất hiện tình trạng sần sùi vì nổi u nhú và tăng sừng."
+      ]
+    },
+    {
+      "tag": "gai_den_symptom",
+      "patterns": ["Triệu chứng bệnh gai đen là gì", "Dấu hiệu bệnh gai đen là gì", "Khi bị gai đen thì xuất hiện những dấu hiệu triệu chứng như thế nào"],
+      "responses": [
+        "Những vùng da sẫm màu từ nâu cho đến đen, dày, khi sờ có cảm giác nhẹ và mịn như khi chạm vào nhung, xuất hiện ở những vùng nếp gấp như sau cổ, nách, chân ngực và háng. Một số trường hợp vùng da ảnh hưởng có thể bị ngứa hoặc có mùi."
+      ]
+    },
+    {
+      "tag": "gai_den_treat",
+      "patterns": ["Điều trị bệnh gai đen như thế nào", "Bệnh gai đen có thể được giải quyết như thế nào", "Làm sao để điều trị bệnh gai đen"],
+      "responses": [
+        "Bệnh gai đen có thể được điều trị bằng nhiều biện pháp dựa vào các nguyên nhân gây bệnh. Cụ thể như sau: Giảm cân (nếu bị bệnh gai đen do thừa cân, béo phì thì hãy áp dụng các biện pháp giảm cân); Ngừng sử dụng thuốc hoặc các chất bổ sung (nếu bệnh gai đen liên quan đế một loại thuốc hoặc chất bổ sung mà người bệnh đang sử dụng thì hãy ngừng dùng chúng); Phẫu thuật (nếu bệnh gai đen đã được kích hoạt bởi khối u ung thư, việc tiến hành phẫu thuật cắt bỏ khối u sẽ giúp các vùng da bị tổn thương được làm sạch). Nếu vùng da bị bệnh xuất hiện các vết loét và trở nên khó chịu hơn hoặc bắt đầu có mùi hôi thì bác sĩ có thể sẽ đề nghị: Thoa kem theo toa để làm sáng hoặc làm mềm các vùng da bị ảnh hưởng; Dùng xà phòng có tính kháng khuẩn, sử dụng nhẹ nhàng để tránh vùng da tổn thương bị cọ xát làm bệnh trầm trọng hơn; Thoa thuốc kháng sinh; Dùng thuốc trị mụn đường uống; Dùng liệu pháp laser để làm giảm độ dày của da. Nhìn chung, để chữa khỏi bệnh gai đen cần xác định chính xác nguyên nhân gây bệnh, nhằm mang lại hiệu quả tích cực. Bệnh gai đen tuy nhẹ, tuy nhiên nó lại có thể là dấu hiệu cảnh báo những căn bệnh nguy hiểm khác, đặc biệt là khối ung thư trong cơ thể như ung thư dạ dày, ung thư gan,... Vì vậy, khi nhận thấy làn da xuất hiện triệu chứng của bệnh gai đen thì nên đến gặp bác sĩ để thăm khám và được tư vấn phương pháp điều trị tốt nhất."
+      ]
+    },
+
+
+
+    {
+      "tag": "ghe_define",
+      "patterns": ["Bệnh ghẻ", "Ghẻ là bệnh gì", "Ghẻ là bệnh như thế nào"],
+      "responses": [
+        "Bệnh ghẻ là tình trạng ngứa da do một loại rệp nhỏ sarcoptes scabiei gây ra. Sau khi bám vào bề mặt da, rệp chui sâu vào trong để đẻ trứng, khiến vùng da đó ngứa ghẻ dữ dội do cơ thể phản ứng dị ứng với tác nhân lạ. Rệp có thể sống trong da đến 2 tháng. Ngoài ra, tình trạng bị ghẻ ngứa sẽ dữ dội hơn về đêm. Điều này có thể khiến người da bị ghẻ gãi nhiều, từ đó dẫn đến các tình trạng xấu hơn như ghẻ lở, nhiễm trùng da."
+      ]
+    },
+    {
+      "tag": "ghe_symptom",
+      "patterns": ["Triệu chứng bệnh ghẻ là gì", "Dấu hiệu bệnh ghẻ là gì", "Khi bị ghẻ thì xuất hiện những dấu hiệu triệu chứng như thế nào"],
+      "responses": [
+        "Các dấu hiệu của ghẻ ngứa thường bao gồm: Ngứa dữ dội và phát ban, thường nặng hơn vào ban đêm; Có những dấu vết nhỏ, ngoằn ngoèo của hang rệp trên da; Xuất hiện những mụn nước hay u nhỏ nhạt màu trên da; Nếu bị ghẻ đóng vảy, trên da xuất hiện lớp vỏ dày chứa hàng ngàn con ve và trứng; Lớp vảy thường xám, dày và hay vỡ vụn ra khi chạm vào."
+      ]
+    },
+    {
+      "tag": "ghe_treat",
+      "patterns": ["Điều trị bệnh ghẻ như thế nào", "Bệnh ghẻ có thể được giải quyết như thế nào", "Làm sao để điều trị bệnh ghẻ"],
+      "responses": [
+        "Để điều trị ghẻ, bạn cần phải dùng thuốc để loại bỏ rệp. Bác sĩ thường chỉ định một số loại kem dưỡng hay thuốc mỡ bôi để trị rệp. Bạn cần bôi toàn cơ thể từ cổ trở xuống và giữ trong vòng ít nhất 8 tiếng để trị ghẻ ngứa. Bác sĩ cũng có thể yêu cầu điều trị cho tất cả các thành viên trong gia đình và người thân cận khác, mặc dù họ không có dấu hiệu ghẻ lở, để ngăn chặn rệp lây lan."
+      ]
+    },
+
+
+
+    {
+      "tag": "hong_ban_da_dang_define",
+      "patterns": ["Bệnh hồng ban đa dạng", "Hồng ban đa dạng là bệnh gì", "Hồng ban đa dạng là bệnh như thế nào"],
+      "responses": [
+        "Hồng ban đa dạng là một bệnh da cấp tính do nhiều căn nguyên khác nhau gây nên với các biểu hiện trên da như các thương tổn dát đỏ, sẩn phù, mụn nước, bọng nước xen kẽ với các thương tổn hình bia bắn. Vị trí hay gặp khi mắc bệnh hồng ban đa dạng là mu bàn tay, cổ tay, cẳng tay, cẳng chân và đầu gối."
+      ]
+    },
+    {
+      "tag": "hong_ban_da_dang_symptom",
+      "patterns": ["Triệu chứng bệnh hồng ban đa dạng là gì", "Dấu hiệu bệnh hồng ban đa dạng là gì", "Khi bị hồng ban đa dạng thì xuất hiện những dấu hiệu triệu chứng như thế nào"],
+      "responses": [
+        "Bệnh hồng ban đa dạng ban đầu có thể có một số các triệu chứng không đặc hiệu gợi ý tình trạng nhiễm virus bao gồm sốt nhẹ, mệt mỏi, đau hầu họng, đau khớp, ỉa chảy... Các tổn thương trên da thường xuất hiện sau các triệu chứng không đặc hiệu khoảng 1-2 tuần. Các tổn thương da điển hình là các sẩn phù hình tròn, vòng cung, có đám đỏ da ở xung quanh và ở giữa hoại tử hoặc có bọng nước. Tổn thương trông giống như hình nhẫn, hình vòng cung hoặc hình bia bắn hay hình con ngươi (mắt). Ở hầu hết các trường hợp, tổn thương da xuất hiện trong vòng 1 – 3 ngày, kích thước thương tổn từ vài mm cho tới vài cm, số lượng nhiều, tập trung chủ yếu ở các chi, đối xứng 2 bên. Sau đó tổn thương có thể lan rộng ra toàn thân. Trong nhiều trường hợp tổn thương không điển hình, có thể chỉ là các sẩn sẫm màu, xung quanh có viền đỏ da mà không có đám hoại tử hoặc mụn nước ở giữa."
+      ]
+    },
+    {
+      "tag": "hong_ban_da_dang_treat",
+      "patterns": ["Điều trị bệnh hồng ban đa dạng như thế nào", "Bệnh hồng ban đa dạng có thể được giải quyết như thế nào", "Làm sao để điều trị bệnh hồng ban đa dạng"],
+      "responses": [
+        "Về điều trị hồng ban đa dạng, đối với phần lớn các trường hợp, người bệnh không cần điều trị vì phát ban sẽ tự khỏi trong vài tuần mà không có biến chứng. Tuy vậy, việc điều trị hỗ trợ hay thuyên giảm triệu chứng có thể cần thiết, tại vị trí tổn thương, sử dụng thuốc bôi corticoid. Kết hợp thuốc bôi với thuốc uống kháng histamin theo chỉ định của bác sĩ. Bôi corticoid ở vết trợt niêm mạc miệng từ 2 - 3 lần/ngày, kết hợp cùng với súc miệng bằng dung dịch có chứa diphenhydramin và lidocain. Trong trường hợp người bệnh bị tổn thương niêm mạc mắt, cần sử dụng thuốc nhỏ mắt hàng ngày. Trường hợp bệnh tiến triển nặng, người bệnh cần đến thăm khám tại chuyên khoa mắt."
+      ]
+    },
+
+
+
+    {
+      "tag": "lang_ben_define",
+      "patterns": ["Bệnh lang ben", "Lang ben là bệnh gì", "Lang ben là bệnh như thế nào"],
+      "responses": [
+        "Lang ben là bệnh nhiễm nấm phổ biến do Malassezia furfur gây ra. Bệnh khiến da đổi màu thành các đốm trắng, vàng, đỏ, hồng hoặc nâu, gây ngứa và thường xuất hiện ở vai, lưng, ngực.  Thời tiết nóng ẩm có thể làm bệnh nặng hơn."
+      ]
+    },
+    {
+      "tag": "lang_ben_symptom",
+      "patterns": ["Triệu chứng bệnh lang ben là gì", "Dấu hiệu bệnh lang ben là gì", "Khi bị lang ben thì xuất hiện những dấu hiệu triệu chứng như thế nào"],
+      "responses": [
+        "Lang ben tuy không ảnh hưởng nhiều đến sức khỏe nhưng gây mất thẩm mỹ bởi các mảng da rối loạn sắc tố. Có thể nhận biết lang ben qua những dấu hiệu sau: Các mảng da đổi màu, thường thấy ở lưng, ngực, bụng, cánh tay. Những mảng này có thể sáng hoặc tối hơn màu da bình thường; Ngứa tại mảng da bị lang ben hoặc vùng da xung quanh; Đổ quá nhiều mồ hôi; Các mảng da có thể khô và đóng vảy; Các mảng da không bị sạm đen hoặc rám nắng."
+      ]
+    },
+    {
+      "tag": "lang_ben_treat",
+      "patterns": ["Điều trị bệnh lang ben như thế nào", "Bệnh lang ben có thể được giải quyết như thế nào", "Làm sao để điều trị bệnh lang ben"],
+      "responses": [
+        "Điều trị lang ben không khó nhưng bệnh hay bị tái phát đặc biệt là ở những người có cơ địa da dầu, thành phần hóa học của mồ hôi bị thay đổi. Để điều trị triệt để, tùy theo tình trạng và mức độ nhiễm nấm để có chỉ định phối hợp điều trị bằng thuốc tại chỗ và thuốc toàn thân. Thuốc điều trị tại chỗ: Áp dụng cho những trường hợp tổn thương mới, ít và khu trú. Điều trị bằng: Tắm, vệ sinh sạch bằng xà phòng, có thể sử dụng xà phòng sastid ngày 1 lần và sử dụng liên tục trong 3 tuần; Kết hợp với bôi kem trị nấm như ketoconazole, Clotrimazole, Terbinafine... Thuốc điều trị toàn thân: Áp dụng cho những trường hợp tổn thương da diện rộng, mức độ tổn thương nặng hoặc những trường hợp không đáp ứng với thuốc sử dụng tại chỗ. Chỉ định uống các thuốc kháng nấm như Gricin, ketoconazole, itraconazole, fluconazole... Sử dụng thuốc điều trị theo đúng chỉ định của bác sĩ. Báo với bác sĩ ngay nếu trong quá trình sử dụng thuốc có biểu hiện của tác dụng phụ, không tự ý xử lý khi chưa có chỉ định của bác sĩ điều trị."
+      ]
+    },
+
+
+
+    {
+      "tag": "lichen_phang_define",
+      "patterns": ["Bệnh lichen phẳng", "Lichen phẳng là bệnh gì", "Lichen phẳng là bệnh như thế nào"],
+      "responses": [
+        "Lichen phẳng là một trong những bệnh thuộc nhóm bệnh da có sẩn và bong vảy tuy nhiên bệnh hiếm gặp hơn so với các bệnh khác trong cùng nhóm. Bệnh có biểu hiện viêm da cấp hoặc mạn tính, không chỉ biểu hiện ngoài da mà bệnh còn ảnh hưởng đến cả niêm mạc, tóc và móng. Bệnh có thể khởi phát ở bất kỳ vùng da nào trên cơ thể, tuy nhiên hay gặp nhất: ở mặt trước cổ tay, lưng, xung quanh mắt cá chân và sinh dục."
+      ]
+    },
+    {
+      "tag": "lichen_phang_symptom",
+      "patterns": ["Triệu chứng bệnh lichen phẳng là gì", "Dấu hiệu bệnh lichen phẳng là gì", "Khi bị lichen phẳng thì xuất hiện những dấu hiệu triệu chứng như thế nào"],
+      "responses": [
+        "Một số tình trạng có thể kể đến về bệnh Lichen phẳng (Lichen planus) như tình trạng gây sưng tấy và kích ứng ở da, tóc, móng tay và màng nhầy. Trên da, thường xuất hiện các nốt đỏ tía, ngứa, phát triển trong vài tuần. Trong miệng, âm đạo và các khu vực khác được bao phủ bởi màng nhầy, các mảng trắng như viền, đôi khi có vết loét đau."
+      ]
+    },
+    {
+      "tag": "lichen_phang_treat",
+      "patterns": ["Điều trị bệnh lichen phẳng như thế nào", "Bệnh lichen phẳng có thể được giải quyết như thế nào", "Làm sao để điều trị bệnh lichen phẳng"],
+      "responses": [
+        "Các biện pháp điều trị bệnh Lichen phẳng chung: Tránh xà phòng và sữa tắm sẽ làm trầm trọng thêm tình trạng đóng cặn; Sử dụng chất làm mềm da thường xuyên; Thuốc kháng histamin an thần có thể giúp giảm ngứa về đêm. Các phương pháp điều trị tại chỗ đối với bệnh da hoặc niêm mạc có triệu chứng là: Corticosteroid tại chỗ mạnh; Thuốc ức chế calcineurin tại chỗ, thuốc mỡ tacrolimus và kem pimecrolimus; Retinoids tại chỗ; Tiêm steroid nội tổn thương. Điều trị toàn thân cho bệnh lichen phẳng lan rộng hoặc trường hợp bệnh  nghiêm trọng  hoặc không đáp ứng với các thuốc đường bôi thường bao gồm một đợt điều trị từ 1 đến 3 tháng. Một số thuốc bao gồm: Acitretin; Hydroxychloroquine; Methotrexate; Azathioprine; Mycophenolate mofetils. Lichen phẳng mạn tính và gây khó chịu nhiều, bạn cần đến thăm khám tại cơ sở y tế chuyên khoa để được bác sĩ da liễu tư vấn và kê đơn thuốc điều trị phù hợp."
+      ]
+    },
+
+
+
+    {
+      "tag": "lupus_ban_do_define",
+      "patterns": ["Bệnh Lupus ban đỏ", "Lupus ban đỏ là bệnh gì", "Lupus ban đỏ là bệnh như thế nào"],
+      "responses": [
+        "Lupus ban đỏ là một căn bệnh tự miễn mạn tính, không rõ nguyên nhân, bệnh gây tổn thương nhiều cơ quan trong cơ thể. Với trường hợp nặng, bệnh có thể đe dọa tới tính mạng của bệnh nhân. Bình thường, trong cơ thể chúng ta có hệ miễn dịch chống lại sự xâm nhập của các tác nhân lạ như là vi khuẩn, virus,... Nhưng trong các bệnh tự miễn nói chung và bệnh lupus ban đỏ nói riêng, hệ miễn dịch của cơ thể mất khả năng phân biệt quen - lạ, nó nhận diện các tế bào của cơ thể là yếu tố lạ và tấn công bằng cách sinh ra các kháng thể chống lại hầu hết các cơ quan. Bệnh còn được gọi là bệnh lupus ban đỏ hệ thống. Từ “lupus” là một từ latin có nghĩa là chó sói, chỉ các vết ban đỏ đặc trưng ở mặt giống như hình vết cắn của chó sói’ từ “hệ thống” để chỉ việc bệnh gây ảnh hưởng đến hầu hết các cơ quan trong cơ thể."
+      ]
+    },
+    {
+      "tag": "lupus_ban_do_symptom",
+      "patterns": ["Triệu chứng bệnh Lupus ban đỏ là gì", "Dấu hiệu bệnh Lupus ban đỏ là gì", "Khi bị Lupus ban đỏ thì xuất hiện những dấu hiệu triệu chứng như thế nào"],
+      "responses": [
+        "Một số triệu chứng của bệnh Lupus ban đỏ xuất hiện trên da bao gồm: Phát ban trên mặt (Đây là hình ảnh bệnh lupus ban đỏ đặc trưng và dễ nhận thấy nhất. Khoảng 30% bệnh nhân có hiện tượng ban đỏ bất thường trên da, vết ban hình giống con bướm ở khu vực mũi và gò má. Ngoài ra, trên các vùng da hở khác như cổ tay, bàn tay,... cũng có thể gặp ban đỏ. Ban đỏ trong bệnh lupus rất nhạy cảm với ánh sáng, nếu tiến triển lâu dài có thể dẫn đến teo phần giữa, gọi là hồng ban dạng đĩa. Bên cạnh đó, triệu chứng lupus ban đỏ trên da còn có thể gặp là bọng nước, rát xuất huyết); Chấm đỏ trên da (Tế bào tiểu cầu có thể bị tấn công trong bệnh lupus ban đỏ. Khi số lượng tiểu cầu giảm, da sẽ nổi nhiều chấm đỏ do mạch máu bị rò rỉ. Một số trường hợp có thể gây ra chảy máu mũi, chảy máu nướu khi đánh răng)..."
+      ]
+    },
+    {
+      "tag": "lupus_ban_do_treat",
+      "patterns": ["Điều trị bệnh Lupus ban đỏ như thế nào", "Bệnh Lupus ban đỏ có thể được giải quyết như thế nào", "Làm sao để điều trị bệnh Lupus ban đỏ"],
+      "responses": [
+        "Điều trị bằng thuốc: Tùy theo triệu chứng lupus ban đỏ mà bác sĩ sẽ chỉ định các loại thuốc khác nhau, một số thuốc thường được sử dụng như: Hydroxychloroquine (thuốc chống sốt rét) cho tất cả các bệnh nhân bị Lupus ban đỏ; Các thuốc chống viêm không steroid (NSAID) thêm vào với thuốc chống sốt rét cho giai đoạn trung bình; Corticosteroid, thuốc ức chế miễn dịch và thuốc chống sốt rét cho bệnh nặng. Để đơn giản trong điều trị, Lupus ban đỏ nên được phân loại là nhẹ đến trung bình (ví dụ như sốt, viêm khớp, viêm màng ngoài tim, phát ban) hoặc nặng (ví dụ như chứng thiếu máu tan máu, xuất huyết giảm tiểu cầu huyết khối, tràn dịch màng phổi và màng ngoài tim, xuất huyết phế nang hoặc viêm phổi, viêm thận, viêm mạch cấp tính hoặc viêm đường tiêu hóa, tổn thương hệ thần kinh trung ương [CNS]). Thuốc chống sốt rét hydroxychloroquine được chỉ định cho tất cả các bệnh nhân bị Lupus ban đỏ ở bất kỳ mức độ nặng nào của bệnh vì thuốc làm giảm đợt cấp và giảm nguy cơ tử vong của bệnh (1); tuy nhiên, hydroxychloroquine không được sử dụng ở bệnh nhân thiếu glucose-6-phosphate dehydrogenase (G6PD) bởi vì nó có thể gây tan huyết."
+      ]
+    },
+
+
+
+    {
+      "tag": "lyme_define",
+      "patterns": ["Bệnh Lyme", "Lyme là bệnh gì", "Lyme là bệnh như thế nào"],
+      "responses": [
+        "Bệnh Lyme là loại bệnh được gây ra bởi 1 loại xoắn khuẩn có tên gọi là Borrelia burgdorferi và có khả năng lây truyền từ động vật sang người do ve đốt. Tất cả mọi lứa tuổi đều có nguy cơ gặp phải căn bệnh này, nhưng người già, trẻ em và cả những người thường xuyên phải làm việc ngoài trời như kiểm lâm viên, lính cứu hỏa,… được cho là có nguy cơ cao hơn. Những người mắc bệnh sẽ thường bị tổn thương ở da, hệ thần kinh, khớp, tim,… Đây là căn bệnh khá phổ biến ở Châu Á. Bệnh có thể xảy ra quanh năm nhưng thời điểm dễ bị bệnh nhất là vào tháng 6 và tháng 10. Một số cuộc khảo sát cho thấy, những bệnh nhân bị Lyme tại Hoa Kỳ còn cao hơn số người bị nhiễm HIV/AIDS."
+      ]
+    },
+    {
+      "tag": "lyme_symptom",
+      "patterns": ["Triệu chứng bệnh Lyme là gì", "Dấu hiệu bệnh Lyme là gì", "Khi bị Lyme thì xuất hiện những dấu hiệu triệu chứng như thế nào"],
+      "responses": [
+        "Thường sau 1 tháng khi bị ve đốt, người bệnh sẽ có biểu hiện mẩn đỏ tại chỗ bị đốt và vết mẩn này sẽ ngày càng nóng, ngứa rát, thậm chí rất đau, hình dạng của vết mần là một vòng tròn đỏ hoàn toàn hoặc có tâm trắng ở giữa. Bên cạnh biểu hiện ở chỗ đốt, người bệnh thường có triệu chứng cảm cúm như đau đầu, đau cơ khớp và mệt mỏi."
+      ]
+    },
+    {
+      "tag": "lyme_treat",
+      "patterns": ["Điều trị bệnh Lyme như thế nào", "Bệnh Lyme có thể được giải quyết như thế nào", "Làm sao để điều trị bệnh Lyme"],
+      "responses": [
+        "Điều trị chủ yếu là thuốc kháng sinh. Nếu trị càng sớm thì khả năng phục hồi càng nhanh, tránh các biến chứng sau này. Sử dụng kháng sinh như sau: Kháng sinh đường uống (Đây là những điều trị tiêu chuẩn cho bệnh Lyme giai đoạn đầu), chúng thường bao gồm doxycycline cho người lớn và trẻ em trên 8 tuổi, hoặc amoxicillin hoặc cefuroxime cho người lớn, trẻ nhỏ và phụ nữ mang thai hoặc cho con bú. Một đợt kháng sinh kéo dài 14 đến 21 ngày thường được khuyến nghị, nhưng một số nghiên cứu cho thấy các khóa kéo dài 10 đến 14 ngày có hiệu quả tương đương. Điều trị kháng sinh là phương pháp điều trị duy nhất đem lại hiệu quả nếu dùng sớm, dùng đúng liều, đủ thời gian. Hiện nay đã có một số biện pháp điều trị thay thế khác tuy nhiên chưa được chứng minh an toàn, hiệu quả."
+      ]
+    },
+
+
+
+    {
+      "tag": "may_day_define",
+      "patterns": ["Bệnh Mày đay", "Mày đay là bệnh gì", "Mày đay là bệnh như thế nào"],
+      "responses": [
+        "Mày đay là tình trạng ban sẩn phù thoáng qua trên da, kèm theo ngứa, thường hết trong vòng 24 giờ. Nó được gây ra bởi sự thoái hóa của các tế bào chứa histamine (tế bào mast) trong lớp trung bì nông. Mày đay có thể là dạng cấp tính (kéo dài không quá 6 tuần) hoặc mạn tính (kéo dài trên 6 tuần). Có nhiều nguyên nhân gây bệnh Mày đay như dị ứng thời tiết, tiếp xúc với môi trường lạnh, dị ứng với hóa mỹ phẩm, côn trùng cắn, dị ứng phấn hoa, mệt mỏi, stress,... Trên cùng một bệnh nhân, đôi khi có nhiều yếu tố kết hợp gây mày đay."
+      ]
+    },
+    {
+      "tag": "may_day_symptom",
+      "patterns": ["Triệu chứng bệnh Mày đay là gì", "Dấu hiệu bệnh Mày đay là gì", "Khi bị Mày đay thì xuất hiện những dấu hiệu triệu chứng như thế nào"],
+      "responses": [
+        "Biểu hiện của mày đay là các sẩn, mảng hồng ban hoặc trắng, phù nề, có giới hạn rõ ràng. Kích thước và hình dạng mày đay thay đổi, có thể có hình tròn hoặc bầu dục, tập hợp lại thành hình đa cung. Mày đay cũng có thể có bóng nước, xuất huyết hoặc tróc vảy trên da. Bệnh nhân có thể bị ngứa nhiều hoặc ít."
+      ]
+    },
+    {
+      "tag": "may_day_treat",
+      "patterns": ["Điều trị bệnh Mày đay như thế nào", "Bệnh Mày đay có thể được giải quyết như thế nào", "Làm sao để điều trị bệnh Mày đay"],
+      "responses": [
+        "Mày đay nhẹ có thể tự chữa trị tại nhà khi áp dụng một số cách sau: Dùng dung dịch chống ngứa, người bị nổi Mày đay thường gãi nhiều dễ dẫn đến tổn thương da, do đó cần vệ sinh bằng các dung dịch giảm ngứa như bột yến mạch, baking soda, tắm nước mát,… (mặc dù biện pháp này giúp bạn giảm ngứa, giảm khó chịu do nổi Mày đay nhưng nếu triệu chứng vẫn tiếp tục xảy ra và kéo dài nghĩa là bạn vẫn chưa cách ly hoàn toàn với yếu tố gây bệnh); Chữa nổi Mày đay bằng thuốc, với những thuốc không kê đơn, người bệnh có thể mua nhưng cần nhờ bác sĩ tư vấn như thuốc kháng histamin, calamine (thuốc bôi ngoài da), cetirizine, loratadine, fexofenadine, benadryl; Bổ sung vitamin và các dưỡng chất, bổ sung bằng thực phẩm giàu dinh dưỡng, rau, trái cây tươi, uống nhiều nước… giúp tăng sức đề kháng cho da, hạn chế nổi sẩn Mày đay. Riêng nguồn vitamin cho cả người lớn và bé cũng cần phải được bác sĩ da liễu hướng dẫn cẩn thận."
+      ]
+    },
+
+
+
+    {
+      "tag": "mun_hat_ke_define",
+      "patterns": ["Bệnh Mụn hạt kê", "Mụn hạt kê là bệnh gì", "Mụn hạt kê là bệnh như thế nào"],
+      "responses": [
+        "Bệnh hạt kê (tiếng anh là Milia) là tình trạng có những nốt mụn nhỏ màu trắng, xuất hiện trên mũi và má. Bệnh này xảy ra khi keratin bị mắc kẹt bên dưới bề mặt da. Keratin là một loại protein thường được tìm thấy trong các mô da, tóc và tế bào móng tay. Bệnh có thể xảy ra ở mọi người thuộc mọi chủng tộc, mọi lứa tuổi."
+      ]
+    },
+    {
+      "tag": "mun_hat_ke_symptom",
+      "patterns": ["Triệu chứng bệnh Mụn hạt kê là gì", "Dấu hiệu bệnh Mụn hạt kê là gì", "Khi bị Mụn hạt kê thì xuất hiện những dấu hiệu triệu chứng như thế nào"],
+      "responses": [
+        "Mụn hạt kê có thể thấy như những nốt mụn nhỏ, hình vòm, thường có màu trắng hoặc vàng. Chúng thường không gây ngứa và cũng không gây đau. Tuy nhiên, triệu chứng này có thể khiến một số người không thoải mái. Khăn trải giường hoặc quần áo thô ráp có thể khiến các nốt mụn sưng đỏ lên."
+      ]
+    },
+    {
+      "tag": "mun_hat_ke_treat",
+      "patterns": ["Điều trị bệnh Mụn hạt kê như thế nào", "Bệnh Mụn hạt kê có thể được giải quyết như thế nào", "Làm sao để điều trị bệnh Mụn hạt kê"],
+      "responses": [
+        "Bệnh hạt kê không gây ra những vấn đề về lâu dài. Ở trẻ sơ sinh, các nốt mụn thường biến mất trong vài tuần sau khi sinh. Mặc dù quá trình này có thể mất nhiều thời gian hơn đối với trẻ lớn và người lớn, nhưng bệnh không được coi là có hại."
+      ]
+    },
+
+
+
+    {
+      "tag": "mun_trung_ca_define",
+      "patterns": ["Bệnh Mụn trứng cá", "Mụn trứng cá là bệnh gì", "Mụn trứng cá là bệnh như thế nào"],
+      "responses": [
+        "Bệnh trứng cá là tình trạng da xuất hiện các mụn có kích thước nhỏ khi các nang lông trên da bị tắc nghẽn do dính dầu và tế bào da chết. Biểu hiện của bệnh trứng cá cấp là các mụn đầu trắng, mụn đầu đen hoặc mụn nhọt và thường xuất hiện trên mặt, trán, ngực, vùng lưng trên và hai bên vai. Mụn trứng cá thường phổ biến nhất ở thanh thiếu niên mặc dù bệnh lý này cũng có thể ảnh hưởng đến bất cứ ai ở mọi lứa tuổi."
+      ]
+    },
+    {
+      "tag": "mun_trung_ca_symptom",
+      "patterns": ["Triệu chứng bệnh Mụn trứng cá là gì", "Dấu hiệu bệnh Mụn trứng cá là gì", "Khi bị Mụn trứng cá thì xuất hiện những dấu hiệu triệu chứng như thế nào"],
+      "responses": [
+        "Các dấu hiệu và triệu chứng mụn trứng cá khác nhau tùy thuộc vào mức độ nghiêm trọng của tình trạng làn da của mỗi người. Cụ thể bệnh trứng cá sẽ có các biểu hiện như sau: Mụn đầu trắng nếu da có lỗ chân lông kín; Mụn đầu đen nếu da có lỗ chân lông mở; Những vết sưng nhỏ, đỏ dạng sẩn; Mụn nhọt, mụn mủ; Khối u lớn, rắn, đau dưới bề mặt da; Các cục u đau, sưng viêm, đầy mủ bên dưới bề mặt da..."
+      ]
+    },
+    {
+      "tag": "mun_trung_ca_treat",
+      "patterns": ["Điều trị bệnh Mụn trứng cá như thế nào", "Bệnh Mụn trứng cá có thể được giải quyết như thế nào", "Làm sao để điều trị bệnh Mụn trứng cá"],
+      "responses": [
+        "Việc điều trị mụn trứng cá sao cho có hiệu quả lâu dài cần phải cá thể hóa và phù hợp với từng nguyên nhân, cơ chế hình thành mụn ở từng người. Điều cơ bản mỗi người có thể thực hiện được để có một làn da khỏe mạnh, sạch mụn là vệ sinh da thường xuyên và đúng cách, xây dựng một chế độ ăn uống giàu rau xanh, trái cây, uống đủ nước; đồng thời cần có một chế độ nghỉ ngơi hợp lý, ngủ đủ giấc, tránh căng thẳng, lo âu và hạn chế sử dụng các chất kích thích như hút thuốc lá. Người bệnh có thể sử dụng các loại kem, sữa rửa mặt hoặc thuốc điều trị tại chỗ không kê đơn để trị mụn. Những thành phần phổ biến có trong kem và gel trị mụn bao gồm: Benzoyl peroxide (giúp làm khô mụn, ngăn mụn mới hình thành và tiêu diệt vi khuẩn gây mụn); Axit salicylic (giúp tẩy tế bào chết trên da, ngăn ngừa lỗ chân lông bị tắc nghẽn do vi khuẩn gây mụn)..."
+      ]
+    },
+
+
+
+    {
+      "tag": "nam_da_define",
+      "patterns": ["Bệnh Nám da", "Nám da là bệnh gì", "Nám da là bệnh như thế nào"],
+      "responses": [
+        "Nám da là tình trạng rối loạn tăng sắc tố da, xuất hiện khi sắc tố Melanin sản sinh quá mức, dẫn đến hình thành các mảng hoặc đốm sẫm màu. Tình trạng này gặp nhiều ở phụ nữ từ 20 – 50 tuổi, nhất là khi mang thai và sau sinh. Nám da có thể đậm và nhạt dần theo thời gian, tình trạng thường nặng vào mùa hè, nhẹ hơn khi trời chuyển đông."
+      ]
+    },
+    {
+      "tag": "nam_da_symptom",
+      "patterns": ["Triệu chứng bệnh Nám da là gì", "Dấu hiệu bệnh Nám da là gì", "Khi bị Nám da thì xuất hiện những dấu hiệu triệu chứng như thế nào"],
+      "responses": [
+        "Rối loạn sắc tố da sẽ làm các mảng da bị sẫm màu lại và chúng thường biểu hiện nhiều nhất ở vùng da mặt gây mất thẩm mỹ cho người bệnh. Nhiều người hay bị nhầm lẫn giữa tàn nhang và nám da, Nám da: là các đốm da sậm màu theo nhiều mức độ đậm nhạt khác nhau, thường hình thành ở cằm, trán, môi trên và đối xứng hai bên má. Màu sắc của những vùng da bị nám có thể là màu thâm vàng, màu nâu sẫm và có kích thước lớn hơn tàn nhang."
+      ]
+    },
+    {
+      "tag": "nam_da_treat",
+      "patterns": ["Điều trị bệnh Nám da như thế nào", "Bệnh Nám da có thể được giải quyết như thế nào", "Làm sao để điều trị bệnh Nám da"],
+      "responses": [
+        "Nám da không phải lúc nào cũng cần phải điều trị. Nếu nguyên nhân của nám do thay đổi nội tiết tố, chẳng hạn như những thay đổi nội tiết tố diễn ra trong khi mang thai hoặc trong khi dùng thuốc tránh thai, đã gây ra nám, thì các vết nám này nó sẽ mờ dần sau khi sinh hoặc khi ngừng uống thuốc. Đối với những người khác, nám có thể kéo dài trong nhiều năm hoặc thậm chí suốt cả cuộc đời. Nếu nám không phai theo thời gian, bạn có thể tìm cách điều trị để giúp loại bỏ hoặc làm mờ các mảng nám. Tuy nhiên, không phải tất cả các phương pháp điều trị đều có hiệu quả với tất cả mọi người và nám có thể quay trở lại ngay cả sau khi điều trị thành công. Lựa chọn điều trị nám bao gồm: Hydroquinone, có sẵn dưới dạng kem dưỡng da, kem hoặc gel, người sử dụng có thể bôi trực tiếp sản phẩm hydroquinone lên các mảng da bị đổi màu giúp các mảng da sáng màu hơn; Corticosteroid và tretinoin, có dưới dạng kem, nước thơm hoặc gel, cả hai đều có thể giúp làm sáng màu các mảng nám; Thuốc bôi ngoài da, được sử dụng cùng hoặc thay thế các loại kem khác, bác sĩ da liễu cũng có thể kê toa axit azelaic hoặc axit kojic, những axit này có tác dụng làm sáng các vùng da tối."
+      ]
+    },
+
+
+
+    {
+      "tag": "soi_define",
+      "patterns": ["Bệnh Sởi", "Sởi là bệnh gì", "Sởi là bệnh như thế nào"],
+      "responses": [
+        "Sởi là một bệnh truyền nhiễm cấp tính với các triệu chứng sốt, phát ban, chảy nước mũi, ho, mắt đỏ... bệnh có thể gặp ở trẻ em, người lớn nếu không có miễn dịch phòng bệnh, có thể gây thành dịch. Bệnh sởi tuy ít gây tử vong nhưng biến chứng có thể gặp là: viêm tai giữa, viêm phổi, tiêu chảy, khô loét giác mạc mắt và đôi khi viêm não sau sởi, đặc biệt ở trẻ em suy dinh dưỡng..."
+      ]
+    },
+    {
+      "tag": "soi_symptom",
+      "patterns": ["Triệu chứng bệnh Sởi là gì", "Dấu hiệu bệnh Sởi là gì", "Khi bị Sởi thì xuất hiện những dấu hiệu triệu chứng như thế nào"],
+      "responses": [
+        "Các triệu chứng của sởi bao gồm: Sốt cao từ 39 - 40 độ C, người nhức mỏi, mắt đỏ do viêm kết mạc, mũi chảy dịch, ho, hắt hơi, đau họng, chán ăn, người xuất hiện các nốt phát ban đỏ li ti. Các nốt phát ban thường mọc ở mặt, vùng vai gáy trước rồi lan dần ra khắp cơ thể. Trong quá trình phát ban, người bệnh sẽ sốt, đau mỏi cơ liên tục cho đến khi các nốt ban phủ kín từ đầu đến chân. Sau vài ngày, các nốt ban sẽ bay dần đi tạo thành các vết thâm da."
+      ]
+    },
+    {
+      "tag": "soi_treat",
+      "patterns": ["Điều trị bệnh Sởi như thế nào", "Bệnh Sởi có thể được giải quyết như thế nào", "Làm sao để điều trị bệnh Sởi"],
+      "responses": [
+        "Do bệnh có khả năng lây nhiễm rất cao nên việc phòng ngừa bệnh, tránh tình trạng lây lan trong cộng đồng là điều cần chú ý. Mọi người cần giữ vệ sinh cá nhân, vệ sinh nhà cửa và môi trường chung quanh, giữ gìn nơi sinh hoạt thông thoáng, sạch sẽ. Với trẻ đã nhiễm bệnh sởi, cần phải được ở phòng thoáng, đủ ánh sáng, nghỉ ngơi, ngủ đủ, vệ sinh răng miệng. Tuyệt đối tránh các tập tục kiêng nước, kiêng gió, kiêng ăn. Trẻ mắc bệnh sẽ chán ăn, khi đó cha mẹ nên để trẻ ăn đồ ăn lỏng, dễ tiêu, kết hợp tăng cường dinh dưỡng bằng các thức ăn giàu vitamin A. Nhỏ mũi, mắt bằng dung dịch nước muối sinh lý (NaCl 0,9%) hoặc dung dịch nhỏ mắt mũi 3-4 lần/ngày. Trẻ cũng cần uống đủ nước, nước oresol hoặc nước hoa quả. Khi trẻ tiêu chảy còn phải bổ sung nước hoặc cho bú nhiều hơn. Khi phát hiện các dấu hiệu bệnh nặng như mệt, li bì, kém ăn, khó thở, tiêu chảy, ho nhiều, ban lặn nhưng vẫn sốt… thì cần đưa trẻ đến các cơ sở y tế để điều trị kịp thời. Khi trẻ có các dấu hiệu bất thường, như sốt lặp lại, ho nhiều hơn và có đờm, hay nheo mắt vì chói, tiêu chảy, sốt cao kéo dài, co giật, li bì, trẻ mệt hơn, thở nhanh nông, khàn tiếng hoặc mất tiếng hoặc có các biểu hiện bất thường khác… cha mẹ cần đưa bé đến các cơ sở y tế gần nhất để được điều trị. Phụ nữ mang thai bị mắc sởi đến bệnh viện gần nhất để được tư vấn và có pháp đồ điều trị trong thời gian thai kỳ."
+      ]
+    },
+
+
+
+    {
+			"tag": "sui_mao_ga_define",
+			"patterns": ["bệnh sùi mào gà", "sùi mào gà là bệnh gì", "sùi mào gà là bệnh như thế nào"],
+			"responses": [
+				"Sùi mào gà còn được gọi là bệnh mồng gà hoặc mụn cóc sinh dục. Đây là căn bệnh xã hội, lây truyền chủ yếu qua đường quan hệ tình dục không an toàn, rất phổ biến trong xã hội hiện nay. Virus gây bệnh sùi mào gà là Human Papillomavirus (HPV). Loại virus này có khoảng 120 chủng, trong đó có 40 chủng là tác nhân gây bệnh thông qua đường quan hệ tình dục. HPV-16 và HPV-18 là tác nhân gây sùi mào gà ở 90% trường hợp mắc bệnh."
+			]
+		},
+		{
+			"tag": "sui_mao_ga_symptom",
+			"patterns": ["triệu chứng bệnh sùi mào gà là gì", "dấu hiệu bệnh sùi mào gà là gì", "khi bị sùi mào gà thì xuất hiện những dấu hiệu triệu chứng gì"],
+			"responses": [
+				"Khi virus xuất hiện trong cơ thể, chúng sẽ ẩn náu tại lớp biểu mô thuộc tầng dưới cùng của da và không gây triệu chứng. Thời gian ủ bệnh kéo dài 2 - 9 tháng và triệu chứng của nam giới và nữ giới có sự khác nhau. Thông thường, nam giới có triệu chứng sùi mào gà sớm hơn nữ giới. Ở phụ nữ, triệu chứng bệnh không rõ ràng và thường chỉ phát hiện khi bệnh đã bước sang giai đoạn nặng."
+			]
+		},
+		{
+			"tag": "sui_mao_ga_treat",
+			"patterns": ["điều trị bệnh sùi mào gà như thế nào", "bệnh sùi mào gà có thể được giải quyết như thế nào", "làm sao để điều trị bệnh sùi mào gà"],
+			"responses": [
+				"Khi thấy mình có biểu hiện của bệnh sùi mào gà, người bệnh nên đến ngay các cơ sở y tế chuyên khoa uy tín để được thăm khám, chẩn đoán và điều trị thích hợp. Việc này giúp tránh gặp phải những biến chứng nghiêm trọng của bệnh. Ngoài ra, để giảm nguy cơ mắc phải căn bệnh này, tiêm vắc-xin HPV là một lựa chọn hợp lý. Vắc-xin HPV giúp hạn chế nguy cơ mắc bệnh sùi mào gà và nhiều bệnh lý khác do virus HPV gây ra."
+			]
+		},
+
+
+
+		{
+			"tag": "thuy_dau_define",
+			"patterns": ["bệnh thuỷ đậu", "thuỷ đậu là bệnh gì", "thuỷ đậu là bệnh như thế nào"],
+			"responses": [
+				"Bệnh thủy đậu (hay còn gọi là trái rạ) là bệnh truyền nhiễm cấp tính do virus thủy đậu có tên Varicella virus gây ra. Loại virus này là tác nhân gây ra bệnh thủy đậu ở trẻ em và bệnh zona ở người lớn."
+			]
+		},
+		{
+			"tag": "thuy_dau_symptom",
+			"patterns": ["triệu chứng bệnh thuỷ đậu là gì", "dấu hiệu bệnh thuỷ đậu là gì", "khi bị thuỷ đậu thì xuất hiện những dấu hiệu triệu chứng gì"],
+			"responses": [
+				"Người bị Thủy đậu sẽ có những triệu chứng ban đầu là: sốt nhẹ, đau đầu, mệt mỏi. Trong khoảng 24 - 48 giờ sau đó trên da sẽ xuất hiện ban đỏ có đường kính khoảng vài milimet. Nhiều trường hợp còn nổi hạch sau tai và viêm họng."
+			]
+		},
+		{
+			"tag": "thuy_dau_treat",
+			"patterns": ["điều trị bệnh thuỷ đậu như thế nào", "bệnh thuỷ đậu có thể được giải quyết như thế nào", "làm sao để điều trị bệnh thuỷ đậu"],
+			"responses": [
+				"Bệnh thủy đậu hiện nay chưa có thuốc đặc trị, chỉ có các loại thuốc và phương pháp hỗ trợ điều trị. Là bệnh lành tính do vậy có thể tự điều trị tại nhà theo chỉ định của bác sĩ. Các trường hợp bị biến chứng cần điều trị nội trú tại bệnh viện theo đúng liệu trình của bác sĩ."
+			]
+		},
+
+
+
+		{
+			"tag": "u_ba_dau_define",
+			"patterns": ["bệnh u bã đậu", "u bã đậu là bệnh gì", "u bã đậu là bệnh như thế nào"],
+			"responses": [
+				"U bã đậu là nốt phồng phát triển chậm bên dưới da, trong có chất nhờn mềm và đặc màu vàng có cặn giống như bã, bên ngoài có màng bọc có lỗ để chất nhờn thông ra ngoài."
+			]
+		},
+		{
+			"tag": "u_ba_dau_symptom",
+			"patterns": ["triệu chứng bệnh u bã đậu là gì", "dấu hiệu bệnh u bã đậu là gì", "khi bị u bã đậu thì xuất hiện những dấu hiệu triệu chứng gì"],
+			"responses": [
+				"Xuất hiện mụn bọc nổi lên trên bề mặt da, không đau, khi sờ vào thấy mềm, nắn vào thấy u có thể di chuyển. Thường xuất hiện ở vùng da tiết ra nhiều mồ hôi và chất bã như: mông, vành tai, ngực, nách, lưng,..."
+			]
+		},
+		{
+			"tag": "u_ba_dau_treat",
+			"patterns": ["điều trị bệnh u bã đậu như thế nào", "bệnh u bã đậu có thể được giải quyết như thế nào", "làm sao để điều trị bệnh u bã đậu"],
+			"responses": [
+				"Phẫu thuật là phương pháp tốt nhất để điều trị u bã đậu. Tốt nhất nên cắt bỏ khối u khi tình trạng bội nhiễm chưa xảy ra vào khối u chỉ mới có kích thước 1 - 2cm. U càng lớn thì càng dễ chảy mủ, tăng nguy cơ nhiễm khuẩn, viêm loét, việc điều trị trở nên phức tạp và dễ bị sẹo xấu sau điều trị."
+			]
+		},
+		
+
+
+		{
+			"tag": "u_hat_nhiem_khuan_define",
+			"patterns": ["bệnh u hạt nhiễm khuẩn", "u hạt nhiễm khuẩn là bệnh gì", "u hạt nhiễm khuẩn là bệnh như thế nào"],
+			"responses": [
+				"Bệnh u hạt nhiễm khuẩn là một u mạch máu lành tính phổ biến xảy ra ở mọi lứa tuổi. Cả da và niêm mạc đều có thể bị ảnh hưởng. Mặc dù lành tính, u hạt nhiễm khuẩn có thể gây khó chịu và chảy máu nhiều."
+			]
+		},
+		{
+			"tag": "u_hat_nhiem_khuan_symptom",
+			"patterns": ["triệu chứng bệnh u hạt nhiễm khuẩn là gì", "dấu hiệu bệnh u hạt nhiễm khuẩn là gì", "khi bị u hạt nhiễm khuẩn thì xuất hiện những dấu hiệu triệu chứng gì"],
+			"responses": [
+				"U hạt nhiễm khuẩn thường xuất hiện ban đầu dưới dạng đốm đỏ, nâu đỏ hoặc xanh đen và không đau. Thương tổn phát triển nhanh chóng trong vài ngày đến vài tuần, đạt đến kích thước 1-2 cm (hiếm khi lên đến 5 cm), dễ chảy máu và có thể loét hình thành vảy tiết."
+			]
+		},
+		{
+			"tag": "u_hat_nhiem_khuan_treat",
+			"patterns": ["điều trị bệnh u hạt nhiễm khuẩn như thế nào", "bệnh u hạt nhiễm khuẩn có thể được giải quyết như thế nào", "làm sao để điều trị bệnh u hạt nhiễm khuẩn"],
+			"responses": [
+				"Bệnh u hạt nhiễm khuẩn có thể tự biến mất, đặc biệt là nếu liên quan đến việc mang thai hoặc do thuốc, sẽ hết khi ngưng thuốc. Một số phương pháp được sử dụng để loại bỏ u hạt: Phẫu thuật cắt bỏ, nạo bằng curret và đốt điện, laser,..."
+			]
+		},
+		
+
+
+		{
+			"tag": "u_hat_vong_define",
+			"patterns": ["bệnh u hạt vòng", "u hạt vòng là bệnh gì", "u hạt vòng là bệnh như thế nào"],
+			"responses": [
+				"U hạt vòng là bệnh lý phổ biến nhất ảnh hưởng đến da. Trên thực tế, nguyên nhân của u hạt vòng vẫn còn chưa rõ. Tuy nhiên, các thương tích da nhẹ và các loại thuốc nhất định có thể kích thích bệnh này. Một số loại u hạt vòng có thể ảnh hưởng đến cả người lớn và trẻ em."
+			]
+		},
+		{
+			"tag": "u_hat_vong_symptom",
+			"patterns": ["triệu chứng bệnh u hạt vòng là gì", "dấu hiệu bệnh u hạt vòng là gì", "khi bị u hạt vòng thì xuất hiện những dấu hiệu triệu chứng gì"],
+			"responses": [
+				"Triệu chứng chung bao gồm các khối sang thương gồ lên mặt da, đỏ hoặc đổi màu da tạo ra hình vòng tròn, thường ở trên các chi như bàn chân hoặc bàn tay. Các dấu hiệu và triệu chứng của u hạt vòng có thể rất khác nhau giữa người này với người khác, tùy thuộc vào loại u hạt vòng mà họ mắc."
+			]
+		},
+		{
+			"tag": "u_hat_vong_treat",
+			"patterns": ["điều trị bệnh u hạt vòng như thế nào", "bệnh u hạt vòng có thể được giải quyết như thế nào", "làm sao để điều trị bệnh u hạt vòng"],
+			"responses": [
+				"Trong hầu hết các trường hợp, bạn khồng cần phải điều trị bệnh này. Hầu hết các tổn thương sẽ tự biến mất trong vòng vài tháng và hiếm khi kéo dài hơn hai năm."
+			]
+		},
+		
+
+
+		{
+			"tag": "u_mau_define",
+			"patterns": ["bệnh u máu", "u máu là bệnh gì", "u máu là bệnh như thế nào"],
+			"responses": [
+				"U máu là tình trạng tăng sinh mạch máu quá mức. Đây là một khối u lành tính, tồn tại trong suốt những năm đầu tiên và có thể thoái triển dần trong thời gian dài, hiếm khi thấy u máu ác tính. U máu có thể xuất hiện ở ngoài da hoặc ở các cơ quan bên trong cơ thể như gan, ruột, hoặc cơ quan hô hấp, cột sống và hệ thần kinh trung ương."
+			]
+		},
+		{
+			"tag": "u_mau_symptom",
+			"patterns": ["triệu chứng bệnh u máu là gì", "dấu hiệu bệnh u máu là gì", "khi bị u máu thì xuất hiện những dấu hiệu triệu chứng gì"],
+			"responses": [
+				"U máu trên da trông giống như một vết bớt đỏ, có thể phẳng hoặc lồi ra trên bề mặt da. Vị trí thường gặp nhất là vùng đầu mặt, cổ, sau tai, ngực lưng,..."
+			]
+		},
+		{
+			"tag": "u_mau_treat",
+			"patterns": ["điều trị bệnh u máu như thế nào", "bệnh u máu có thể được giải quyết như thế nào", "làm sao để điều trị bệnh u máu"],
+			"responses": [
+				"U máu là một bệnh lý không ảnh hưởng nhiều đến sức khỏe của người bệnh. Tuy nhiên trong một số trường hợp, người bệnh cần được điều trị với các phương pháp khác nhau tùy theo đặc điểm của từng loại u máu. Các chỉ định điều trị với khối u máu được đưa ra trong các trường hợp: \n-Khối u thường xuyên chảy máu.\n-U máu xuất hiện ở những vị trí làm giảm tính thẩm mỹ, gây ảnh hưởng đến tâm lý của người bệnh.\n-U lớn chèn ép lên hệ mạch máu và hệ tuần hoàn.\n-U máu phá vỡ lớp biểu bì xung quanh.\n-U lớn chèn ép vào đường thở, ảnh hưởng đến quá trình hô hấp\n-U máu cản trở tầm nhìn hoặc chuyển động của mắt."
+			]
+		},
+		
+
+
+		{
+			"tag": "u_mem_lay_define",
+			"patterns": ["bệnh u mềm lây", "u mềm lây là bệnh gì", "u mềm lây là bệnh như thế nào"],
+			"responses": [
+				"U mềm lây là bệnh truyền nhiễm do một loại vi khuẩn trong nhóm Poxvirus. Khi mắc bệnh, vùng da sẽ xuất hiện dạng cục u trên bề mặt có màu đỏ hoặc màu trắng sáp. U mềm lây không gây đau đớn cho người mắc, tuy nhiên chúng có thể gây mưng mủ, u mềm lây có thể tự mất đi sau khoảng vài tháng."
+			]
+		},
+		{
+			"tag": "u_mem_lay_symptom",
+			"patterns": ["triệu chứng bệnh u mềm lây là gì", "dấu hiệu bệnh u mềm lây là gì", "khi bị u mềm lây thì xuất hiện những dấu hiệu triệu chứng gì"],
+			"responses": [
+				"Khi bị u mềm lây, sẽ xuất hiện những u thịt nhỏ trên những vùng da bị lây như vùng mặt, mí mắt, nách và đùi. Điều đặc biệt, u mềm lây không xuất hiện ở lòng bàn tay và lòng bàn chân. Những u mềm lây thịt này không gây ngứa, đau, hoặc sưng tấy. Các khối u có kích thước nhỏ hơn 0,5cm, có dạng hình tròn đi kèm theo một vết lõm ở giữa và có dịch màu trắng sáp chứa virus gây bệnh."
+			]
+		},
+		{
+			"tag": "u_mem_lay_treat",
+			"patterns": ["điều trị bệnh u mềm lây như thế nào", "bệnh u mềm lây có thể được giải quyết như thế nào", "làm sao để điều trị bệnh u mềm lây"],
+			"responses": [
+				"Thuốc bôi ngoài da là phương pháp điều trị nốt u mềm đơn giản lại hiệu quả. Tuy nhiên tùy vào mức độ nặng hay nhẹ bác sĩ sẽ cho chỉ định khác nhau. Một số phương pháp kháp điều trị u mềm lây ngoài bôi thuốc phổ biến hiện nay: \n-Áp lạnh với nitơ.\n-Nạo bằng curret.\n-Phương pháp laser."
+			]
+		},
+		
+
+
+		{
+			"tag": "u_soi_bi_define",
+			"patterns": ["bệnh u sợi bì", "u sợi bì là bệnh gì", "u sợi bì là bệnh như thế nào"],
+			"responses": [
+				"U sợi bì là những khối u vô hại nằm trong da, thường có đường kính nhỏ. Chúng có thể khác nhau về màu sắc và có thể thay đổi màu theo thời gian. U sợi bì không di động, sờ cứng như đá, ở bên dưới hoặc nhô lên trên da. Hầu hết các u sợi bì da không đau. Một số trường hợp cảm thấy ngứa hoặc kích ứng tại chỗ mọc."
+			]
+		},
+		{
+			"tag": "u_soi_bi_symptom",
+			"patterns": ["triệu chứng bệnh u sợi bì là gì", "dấu hiệu bệnh u sợi bì là gì", "khi bị u sợi bì thì xuất hiện những dấu hiệu triệu chứng gì"],
+			"responses": [
+				"Xuất hiện vết sưng tròn nằm dưới da với kích thước từ đầu bút bi đến hạt đậu. Màu sắc có thể là hồng, đỏ, xám, nâu nhạt hoặc tím ở các mức độ khác nhau và có thể thay đổi theo thời gian. Chủ yếu ở chân, nhưng đôi khi ở cánh tay, thân mình và ít phổ biến hơn ở những nơi khác trên cơ thể. Thường vô hại và không đau, nhưng đôi khi có thể ngứa, đau hoặc viêm."
+			]
+		},
+		{
+			"tag": "u_soi_bi_treat",
+			"patterns": ["điều trị bệnh u sợi bì như thế nào", "bệnh u sợi bì có thể được giải quyết như thế nào", "làm sao để điều trị bệnh u sợi bì"],
+			"responses": [
+				"Hầu hết các u sợi bì không cần điều trị và thường sẽ không gây ra triệu chứng nào ngoài biểu hiện trên da. Tuy nhiên, một số người vẫn chọn cách loại bỏ chúng. Việc loại bỏ đặc biệt phổ biến nếu khối u ảnh hưởng đến thẩm mỹ hoặc xuất hiện ở vị trí không mong muốn.\nMột số phương pháp điều trị bao gồm: \n-Đông lạnh khối u bằng nitơ lỏng.\n-Tiêm corticosteroid.\n-Sử dụng laser."
+			]
+		},
+		
+
+
+		{
+			"tag": "ung_thu_te_bao_day_define",
+			"patterns": ["bệnh ung thư tế bào đáy", "ung thư tế bào đáy là bệnh gì", "ung thư tế bào đáy là bệnh như thế nào"],
+			"responses": [
+				"Ung thư biểu mô tế bào đáy (Basal cell carcinoma - BCC) là một loại ung thư da phổ biến, chiếm tỷ lệ khoảng 75% trong các loại ung thư da. Ung thư da biểu mô tế bào đáy bắt nguồn từ trong các tế bào nền - một loại tế bào trong da tạo thành lớp sâu nhất của biểu mô. Các tế bào da mới này sẽ thay thế dần các tế bào cũ khi chúng chết đi."
+			]
+		},
+		{
+			"tag": "ung_thu_te_bao_day_symptom",
+			"patterns": ["triệu chứng bệnh ung thư tế bào đáy là gì", "dấu hiệu bệnh ung thư tế bào đáy là gì", "khi bị ung thư tế bào đáy thì xuất hiện những dấu hiệu triệu chứng gì"],
+			"responses": [
+				"Bệnh ung thư biểu mô tế bào đáy thường xuất hiện dưới dạng vết sưng u trên da, hơi trong suốt. Ngoài ra, bệnh có thể biểu hiện tổn thương ở các dạng khác. Ung thư da biểu mô tế bào đáy thường xảy ra trên các vùng da tiếp xúc với ánh nắng mặt trời, chẳng hạn như đầu và cổ."
+			]
+		},
+		{
+			"tag": "ung_thu_te_bao_day_treat",
+			"patterns": ["điều trị bệnh ung thư tế bào đáy như thế nào", "bệnh ung thư tế bào đáy có thể được giải quyết như thế nào", "làm sao để điều trị bệnh ung thư tế bào đáy"],
+			"responses": [
+				"Bệnh ung thư biểu mô tế bào đáy thường được điều trị bằng phẫu thuật, nhằm loại bỏ tất cả tế bào ung thư và những phần mô xung quanh chúng. Đôi khi, các phương pháp điều trị khác có thể được khuyến cáo trong một số tình huống, chẳng hạn như khi bệnh nhân không thể thực hiện phẫu thuật hoặc không muốn phẫu thuật. Các phương pháp điều trị khác bao gồm: \n-Nạo và điện di.\n-Xạ trị.\n-Đông lạnh.\n-Liệu pháp quang động lực học.\n-Điều trị tại chỗ."
+			]
+		},
+		
+
+
+		{
+			"tag": "ung_thu_te_bao_hac_to_define",
+			"patterns": ["bệnh ung thư tế bào hắc tố", "ung thư tế bào hắc tố là bệnh gì", "ung thư tế bào hắc tố là bệnh như thế nào"],
+			"responses": [
+				"Ung thư hắc tố là một loại ung thư phát triển từ tế bào chứa hắc tố, gồm melanocytes. Melanocytes là các tế bào sản xuất hắc tố melanin, quyết định màu sắc của da, tóc và mắt. Khi tế bào melanocytes trở nên không bình thường và không kiểm soát được quá trình tăng trưởng, chúng có thể phát triển thành khối u ác tính, gọi là ung thư hắc tố."
+			]
+		},
+		{
+			"tag": "ung_thu_te_bao_hac_to_symptom",
+			"patterns": ["triệu chứng bệnh ung thư tế bào hắc tố là gì", "dấu hiệu bệnh ung thư tế bào hắc tố là gì", "khi bị ung thư tế bào hắc tố thì xuất hiện những dấu hiệu triệu chứng gì"],
+			"responses": [
+				"Các dấu hiệu ban đầu của ung thư hắc tố da: \n-Nốt ruồi cũ đột ngột thay đổi về hình dáng, kích thước hay chảy máu, ngứa ngáy. Nốt ruồi có màu sẫm dần hoặc có thể loét sùi, đường viền không đều, nham nhở, bất đối xứng. \n-Xuất hiện nốt tăng sắc tố hoặc khác thường trên da."
+			]
+		},
+		{
+			"tag": "ung_thu_te_bao_hac_to_treat",
+			"patterns": ["điều trị bệnh ung thư tế bào hắc tố như thế nào", "bệnh ung thư tế bào hắc tố có thể được giải quyết như thế nào", "làm sao để điều trị bệnh ung thư tế bào hắc tố"],
+			"responses": [
+				"Cách điều trị ung thư hắc tố da phụ thuộc và giai đoạn và thể trạng của bệnh nhân. Các biện pháp bao gồm: \n-Phẫu thuật loại bỏ tổn thương.\n-Sử dụng thuốc hóa chất để tiêu diệt tế bào ung thư.\n-Xạ trị.\n-Liệu pháp miễn dịch."
+			]
+		},
+		
+
+
+		{
+			"tag": "ung_thu_te_bao_vay_define",
+			"patterns": ["bệnh ung thư tế bào vảy", "ung thư tế bào vảy là bệnh gì", "ung thư tế bào vảy là bệnh như thế nào"],
+			"responses": [
+				"Ung thư tế bào vảy (SCC) hay còn được gọi là ung thư biểu mô tế bào vảy, là một loại ung thư da bắt đầu từ các tế bào vảy. Tế bào vảy là những tế bào mỏng, phẳng là một thành phần của lớp biểu bì, hoặc lớp ngoài cùng của da. Các bộ phận khác của cơ thể bao cũng có tế bào vảy và cũng có thể trở thành ung thư bao gồm phổi, màng nhầy và đường tiết niệu."
+			]
+		},
+		{
+			"tag": "ung_thu_te_bao_vay_symptom",
+			"patterns": ["triệu chứng bệnh ung thư tế bào vảy là gì", "dấu hiệu bệnh ung thư tế bào vảy là gì", "khi bị ung thư tế bào vảy thì xuất hiện những dấu hiệu triệu chứng gì"],
+			"responses": [
+				"Ung thư tế bào vảy thường xảy ra ở những vùng da tiếp xúc với bức xạ UV, chẳng hạn như mặt, tai và tay. Tuy nhiên, nó cũng có thể xuất hiện ở miệng, ở vùng hậu môn và bộ phận sinh dục. Các triệu chứng bao gồm: \n-Nốt đỏ cứng.\n-Vết loét phẳng có vảy.\n-Vết loét mới xuất hiện hoặc nổi lên trên sẹo hoặc vết loét cũ.\n-Một mảng sần sùi và có vảy nằm ở trên môi có thể phát triển thành vết loét hở.\n-Vết loét đỏ hoặc mảng sần sùi bên trong miệng của bạn.\n-Một mảng đỏ, nổi lên hoặc vết loét giống như mụn cóc trên hoặc trong hậu môn."
+			]
+		},
+		{
+			"tag": "ung_thu_te_bao_vay_treat",
+			"patterns": ["điều trị bệnh ung thư tế bào vảy như thế nào", "bệnh ung thư tế bào vảy có thể được giải quyết như thế nào", "làm sao để điều trị bệnh ung thư tế bào vảy"],
+			"responses": [
+				"Nếu ung thư tế bào vảy được phát hiện sớm, tình trạng này thường có thể được điều trị thành công. Nó sẽ trở nên khó chữa hơn khi nó đã lan rộng. Nhiều phương pháp khác nhau có thể được sử dụng để điều trị tình trạng này, bao gồm: \n-Phẫu thuật Mohs.\n-Phẫu thuật đặc biệt.\n-Phẫu thuật điện.\n-Phẫu thuật lạnh.\n-Điều trị bằng bức xạ."
+			]
+		},
+		
+
+
+		{
+			"tag": "vay_nen_define",
+			"patterns": ["bệnh vảy nến", "vảy nến là bệnh gì", "vảy nến là bệnh như thế nào"],
+			"responses": [
+				"Vảy nến là căn bệnh da liễu khá phổ biến. Người bệnh mắc vảy nến thường bị ngứa ngáy, đau rát, khó chịu, ửng đỏ, bong tróc da. Vảy nến nếu tái đi tái lại nhiều lần có thể gây nhiễm trùng da, viêm khớp, vảy nến mủ, đỏ da toàn thân,..."
+			]
+		},
+		{
+			"tag": "vay_nen_symptom",
+			"patterns": ["triệu chứng bệnh vảy nến là gì", "dấu hiệu bệnh vảy nến là gì", "khi bị vảy nến thì xuất hiện những dấu hiệu triệu chứng gì"],
+			"responses": [
+				"Các dấu hiệu và triệu chứng phổ biến của bệnh vảy nến bao gồm: \n-Phát ban loang lổ với nhiều hình dạng khác nhau, từ những nốt vảy giống như vảy gàu đến nốt ban lớn khắp cơ thể.\n-Ban có màu khác nhau. Người có màu da nâu hoặc da đen thường rơi vào sắc tím. Người da trắng có sắc hồng hoặc đỏ với vảy bạc.\n-Đốm vảy nhỏ (thường gặp ở trẻ em).\n-Da khô, nứt nẻ có thể chảy máu.\n-Ngứa, rát hoặc đau nhức.\n-Phát ban theo chu kỳ, bùng phát trong vài tuần hoặc vài tháng rồi giảm dần sau đó."
+			]
+		},
+		{
+			"tag": "vay_nen_treat",
+			"patterns": ["điều trị bệnh vảy nến như thế nào", "bệnh vảy nến có thể được giải quyết như thế nào", "làm sao để điều trị bệnh vảy nến"],
+			"responses": [
+				"Vảy nến không có thuốc chữa. Các liệu pháp điều trị thường nhắm đến việc giảm nhẹ sự viêm nhiễm và hình thành vảy da, làm chậm sự phát triển tế bào da và loại bỏ những mảng da bị vảy nến. Các hình thức điều trị vảy nến bao gồm: \n-Điều trị dùng thuốc tại chỗ.\n-Các thuốc ức chế miễn dịch.\n-Quang trị liệu."
+			]
+		},
+		
+
+
+		{
+			"tag": "viem_bi_co_define",
+			"patterns": ["bệnh viêm bì cơ", "viêm bì cơ là bệnh gì", "viêm bì cơ là bệnh như thế nào"],
+			"responses": [
+				"Viêm bì cơ là bệnh lý do tình trạng viêm vô căn ở cơ với các triệu chứng đặc trưng ở da. Ngoài ra, bệnh lý cũng có thể ảnh hưởng đến khớp, thực quản, phổi và tim với mức độ không đồng nhất. Bệnh thường xảy ra nhiều nhất ở hai nhóm đối tượng là trẻ em và người lớn tuổi. Viêm bì cơ cũng có thể gây hiện tượng loạn dưỡng lắng đọng canxi, thường quan sát thấy nhất ở lứa tuổi trẻ em và dậy thì."
+			]
+		},
+		{
+			"tag": "viem_bi_co_symptom",
+			"patterns": ["triệu chứng bệnh viêm bì cơ là gì", "dấu hiệu bệnh viêm bì cơ là gì", "khi bị viêm bì cơ thì xuất hiện những dấu hiệu triệu chứng gì"],
+			"responses": [
+				"Lý do đến khám ở bệnh nhân viêm cơ bì thường là ở da. Biểu hiện ở da cũng thường là triệu chứng khởi phát của bệnh trong khoảng 40% các trường hợp. Những biểu hiện ở da bạn có thể gặp như: \n-Ban đỏ vùng giữa mặt.\n-Thay đổi cấu trúc nếp móng.\n-Phát ban mặt trên ngoài đùi.\n-Có thể có ngứa vùng da tổn thương.\n-Tróc vảy da đầu hoặc rụng tóc lan tỏa.\n-Ban da xuất hiện chủ yếu ở vùng da tiếp xúc ánh sáng.\n-Phát ban qua rìa mí mắt, có thể có phù nề quanh ổ mắt.\n-Phát ban mặt lưng bàn tay, nhất là trên các đốt ngón tay."
+			]
+		},
+		{
+			"tag": "viem_bi_co_treat",
+			"patterns": ["điều trị bệnh viêm bì cơ như thế nào", "bệnh viêm bì cơ có thể được giải quyết như thế nào", "làm sao để điều trị bệnh viêm bì cơ"],
+			"responses": [
+				"Không có cách chữa khỏi viêm bì cơ, nhưng việc điều trị có thể cải thiện các vấn đề da, cũng như sức cơ và chức năng cơ bắp của bạn. Việc điều trị càng được bắt đầu sớm thì càng hiệu quả. Một số phương pháp bao gồm: \n-Sử dụng thuốc.\n-Phương pháp trị liệu.\n-Phẫu thuật."
+			]
+		},
+		
+
+
+		{
+			"tag": "viem_da_co_dia_define",
+			"patterns": ["bệnh viêm da cơ địa", "viêm da cơ địa là bệnh gì", "viêm da cơ địa là bệnh như thế nào"],
+			"responses": [
+				"Viêm da cơ địa là một chứng viêm da, ngứa mãn tính. Bệnh lý này có thể đi kèm với các bệnh cơ địa khác như hen suyễn, sốt cỏ khô hay viêm mũi dị ứng... Các triệu chứng của viêm da cơ địa thường khởi phát rất sớm, ngay từ tuổi sơ sinh, có thể tiếp tục đến lúc trưởng thành hoặc cũng có thể xuất hiện bất cứ thời điểm nào trong đời."
+			]
+		},
+		{
+			"tag": "viem_da_co_dia_symptom",
+			"patterns": ["triệu chứng bệnh viêm da cơ địa là gì", "dấu hiệu bệnh viêm da cơ địa là gì", "khi bị viêm da cơ địa thì xuất hiện những dấu hiệu triệu chứng gì"],
+			"responses": [
+				"Viêm da cơ địa thường tiến triển thành từng đợt, trong đợt cấp tính, người bệnh thấy một vùng da nổi mẩn đỏ và ngứa. Mức độ ngứa đôi khi rất nghiêm trọng, đặc biệt là vào ban đêm khiến người bệnh mất ngủ. Khi bệnh lui dần, vùng da sẽ chuyển sang màu nâu, xám, hoặc để lại các mảng dày da do chà xát nhiều."
+			]
+		},
+		{
+			"tag": "viem_da_co_dia_treat",
+			"patterns": ["điều trị bệnh viêm da cơ địa như thế nào", "bệnh viêm da cơ địa có thể được giải quyết như thế nào", "làm sao để điều trị bệnh viêm da cơ địa"],
+			"responses": [
+				"Mục đích điều trị viêm da cơ địa là để giảm viêm, giảm ngứa và ngăn chặn các cơn bùng phát trong tương lai, tránh biến chứng. Theo đó, các loại thuốc thường được bác sĩ chỉ định chi tiết như sau: \n-Kem chống ngứa.\n-Kem dưỡng ẩm.\n-Kem kháng viêm.\n-Kháng sinh."
+			]
+		},
+		
+
+
+		{
+			"tag": "viem_da_do_virus_herpes_define",
+			"patterns": ["bệnh viêm da do virus herpes", "viêm da do virus herpes là bệnh gì", "viêm da do virus herpes là bệnh như thế nào"],
+			"responses": [
+				"Viêm da virus là tình trạng tổn thương da do virus Herpes Simplex 1 (HSV1) gây ra. Bệnh cũng thường gặp ở những bệnh nhân viêm da do cơ địa hoặc do dị ứng khi tiếp xúc, hoặc có thể là viêm da dầu. Viêm da virus là bệnh có thể lây nhiễm thông qua tiếp xúc trực tiếp với chất tiết, dịch của người bệnh. Bệnh thường xuất hiện ở những vùng da hở tại các vị trí như: đầu, mặt, cổ, trường hợp nặng có thể lan rộng toàn thân."
+			]
+		},
+		{
+			"tag": "viem_da_do_virus_herpes_symptom",
+			"patterns": ["triệu chứng bệnh viêm da do virus herpes là gì", "dấu hiệu bệnh viêm da do virus herpes là gì", "khi bị viêm da do virus herpes thì xuất hiện những dấu hiệu triệu chứng gì"],
+			"responses": [
+				"Sau khi virus HSV1 xâm nhập vào cơ thể, chúng sẽ gây bệnh và ủ bệnh trong 1 - 2 tuần. Theo đó, tình trạng viêm da xuất hiện với những triệu chứng lâm sàng như sau: \n-Nổi mụn nước li ti màu đỏ, có kích thước nhỏ rải rác trên da.\n-Bên trong mụn nước có chứa dịch.\n-Mụn nước gây ngứa. Khi gãi làm trầy xước có thể bị vỡ và tiết dịch, khô lại đóng thành vảy cứng trên da.\n-Vùng da bị tổn thương, viêm có thể gây cảm giác đau rát."
+			]
+		},
+		{
+			"tag": "viem_da_do_virus_herpes_treat",
+			"patterns": ["điều trị bệnh viêm da do virus herpes như thế nào", "bệnh viêm da do virus herpes có thể được giải quyết như thế nào", "làm sao để điều trị bệnh viêm da do virus herpes"],
+			"responses": [
+				"Việc điều trị bệnh da do virus Herpes Simplex 1 sẽ gặp nhiều khó khăn vì đây là bệnh không thể điều trị dứt hẳn. Mục tiêu điều trị chủ yếu là kiểm soát các triệu chứng như ngứa, viêm da, đồng thời phòng ngừa tình trạng bội nhiễm trên da.\nĐiều trị chung viêm da virus gồm các biện pháp như sau: \n-Hạn chế tiếp xúc với các chất kích thích.\n-Hạn chế hoặc tránh tiếp xúc với dị ứng gây bệnh.\n-Sử dụng thuốc kháng histamin, corticoid để giảm ngứa, chống viêm, dị ứng.\n-Hạn chế hoặc tránh gãi, làm trầy xước, tiếp xúc với hóa chất ở những vùng da bị viêm, tổn thương.\n-Trường hợp bệnh nhân bị bội nhiễm có thể được chỉ định dùng kháng sinh dạng uống."
+			]
+		},
+		
+
+
+		{
+			"tag": "viem_da_tiep_xuc_di_ung_define",
+			"patterns": ["bệnh viêm da tiếp xúc dị ứng", "viêm da tiếp xúc dị ứng là bệnh gì", "viêm da tiếp xúc dị ứng là bệnh như thế nào"],
+			"responses": [
+				"Viêm da tiếp xúc dị ứng là căn bệnh phổ biến về da, là tình trạng da bị dị ứng khi tiếp xúc trực tiếp với chất kích thích hoặc chất gây dị ứng. Khi bị viêm da tiếp xúc, người bệnh sẽ cảm thấy ngứa ngáy và khó chịu, bệnh còn gây ảnh hưởng tiêu cực đến thẩm mỹ của da."
+			]
+		},
+		{
+			"tag": "viem_da_tiep_xuc_di_ung_symptom",
+			"patterns": ["triệu chứng bệnh viêm da tiếp xúc dị ứng là gì", "dấu hiệu bệnh viêm da tiếp xúc dị ứng là gì", "khi bị viêm da tiếp xúc dị ứng thì xuất hiện những dấu hiệu triệu chứng gì"],
+			"responses": [
+				"Các triệu chứng của viêm da tiếp xúc dị ứng bao gồm: \n-Đỏ da.\n-Da khô từng mảng, có vảy.\n-Mụn nước rỉ nước.\n-Nóng rát hoặc ngứa.\n-Sưng ở mắt, mặt và bộ phận sinh dục, trong trường hợp nghiêm trọng.\n-Nổi mề đay.\n-Nhạy cảm với ánh nắng mặt trời.\n-Da sẫm màu, sần sùi và nứt nẻ."
+			]
+		},
+		{
+			"tag": "viem_da_tiep_xuc_di_ung_treat",
+			"patterns": ["điều trị bệnh viêm da tiếp xúc dị ứng như thế nào", "bệnh viêm da tiếp xúc dị ứng có thể được giải quyết như thế nào", "làm sao để điều trị bệnh viêm da tiếp xúc dị ứng"],
+			"responses": [
+				"Đa phần các trường hợp viêm da tiếp xúc sẽ tự khỏi và bạn không cần phải lo lắng quá nhiều. Tuy nhiên, nếu bị phát ban ở vùng gần mắt hoặc miệng, hoặc diện tích da tổn thương rộng, hoặc các triệu chứng không cải thiện khi điều trị tại nhà thì người bệnh cần đến chuyên khoa da liễu để được khám và điều trị đúng phương pháp."
+			]
+		},
+		
+
+
+		{
+			"tag": "viem_da_u_tre_define",
+			"patterns": ["bệnh viêm da ứ trệ", "viêm da ứ trệ là bệnh gì", "viêm da ứ trệ là bệnh như thế nào"],
+			"responses": [
+				"Viêm da ứ trệ (Stasis dermatitis), gọi tắt SD, là một dạng rối loạn về da có liên quan đến suy tĩnh mạch mạn tính,  phổ biến  ở hai chi dưới. Đây là di chứng da sớm nhất của suy tĩnh mạch mạn tính với tăng huyết áp tĩnh mạch và là dấu hiệu báo trước của bệnh loét chân tĩnh mạch và xơ mỡ."
+			]
+		},
+		{
+			"tag": "viem_da_u_tre_symptom",
+			"patterns": ["triệu chứng bệnh viêm da ứ trệ là gì", "dấu hiệu bệnh viêm da ứ trệ là gì", "khi bị viêm da ứ trệ thì xuất hiện những dấu hiệu triệu chứng gì"],
+			"responses": [
+				"Triệu chứng thường gặp như da trở nên mỏng, màu nâu, với các tổn thương có thể như chấm hoặc đốm, ban đỏ, kích ứng bề mặt, vùng da ở mắt cá chân hoặc cẳng chân trở nên sậm màu và/hoặc dày lên. Da bị suy và có thể loét cục bộ, chân, mắt cá chân, hoặc các khu vực khác có thể sưng lên kèm theo lở loét, ngứa hoặc đau chân. Đôi khi có thể bị đau dai dẳng ở các mô bị sưng và có thể cảm giác như bị kim châm."
+			]
+		},
+		{
+			"tag": "viem_da_u_tre_treat",
+			"patterns": ["điều trị bệnh viêm da ứ trệ như thế nào", "bệnh viêm da ứ trệ có thể được giải quyết như thế nào", "làm sao để điều trị bệnh viêm da ứ trệ"],
+			"responses": [
+				"Quá trình điều trị viêm da ứ đọng giúp kiểm soát các triệu chứng khó chịu của người bệnh. Người bệnh có thể được thực hiện điều trị giảm sưng và đau bằng cách chườm chân bằng vớ giãn tĩnh mạch. Thêm vào đó, có thể chườm chân bằng tất chân để cải thiện lưu lượng máu đồng thời đối phó với tình trạng sưng tấy. Ngoài ra, người bệnh có thể giảm sưng bằng cách nâng cao chân lên ngực, và thói quen này cũng giúp cải thiện lưu lượng máu từ chân đến tim. Người bệnh có thể sử dụng kem dưỡng ẩm để làm mềm da hoặc sử dụng thuốc mỡ có chứa corticosteroid. Tuy nhiên, khi sử dụng các loại này cần tham khảo tư vấn của bác sĩ. Bởi vì nếu sử dụng lâu những loại thuốc này có thể gây ra tác dụng phụ. Người bệnh nên bảo vệ vết thương không nên để tiếp xúc với không khí bên ngoài. Và nên thay băng vết thương thường xuyên."
+			]
+		},
+		
+
+
+		{
+			"tag": "viem_mach_define",
+			"patterns": ["bệnh viêm mạch", "viêm mạch là bệnh gì", "viêm mạch là bệnh như thế nào"],
+			"responses": [
+				"Viêm mạch là một loại bệnh lý làm viêm các mạch máu. Bệnh viêm mạch làm cho các thành mạch máu thay đổi bất thường (dày lên hoặc mỏng đi) dẫn đến hiện tượng thiếu máu mô, cơ quan hay phình mạch máu, phá hủy mạch máu làm thoát hồng cầu ra tổ chức mô."
+			]
+		},
+		{
+			"tag": "viem_mach_symptom",
+			"patterns": ["triệu chứng bệnh viêm mạch là gì", "dấu hiệu bệnh viêm mạch là gì", "khi bị viêm mạch thì xuất hiện những dấu hiệu triệu chứng gì"],
+			"responses": [
+				"Bệnh nhân có thể có các triệu chứng tổn thương ngoài da như xuất huyết dạng sẩn, nốt xuất huyết, mề đay, loét, viêm mạch mạng xanh tím và các tổn thương dạng nốt. Nếu tổn thương da là thứ phát do viêm mạch hệ thống, bệnh nhân có thể có các biểu hiện như sốt, đau khớp hoặc kết hợp với các triệu chứng trên cơ quan khác."
+			]
+		},
+		{
+			"tag": "viem_mach_treat",
+			"patterns": ["điều trị bệnh viêm mạch như thế nào", "bệnh viêm mạch có thể được giải quyết như thế nào", "làm sao để điều trị bệnh viêm mạch"],
+			"responses": [
+				"Điều trị viêm mạch ngoài da cần chú trọng vào điều trị nguyên nhân khi có thể. Trong một số trường hợp chỉ cần sử dụng tất chân và các thuốc kháng histamin. Nếu biện pháp này không hiệu quả, có thể thực hiện điều trị thử bằng colchicine, hydroxychloroquine hoặc dapsone, hoặc một đợt corticosteroid liều thấp ngắn ngày. Một số ít trường hợp nặng hơn có thể sử dụng các thuốc ức chế miễn dịch mạnh hơn."
+			]
+		},
+		
+
+
+		{
+			"tag": "viem_nang_long_define",
+			"patterns": ["bệnh viêm nang lông", "viêm nang lông là bệnh gì", "viêm nang lông là bệnh như thế nào"],
+			"responses": [
+				"Viêm nang lông là bệnh ngoài da thường gặp, xuất hiện do một nhiễm trùng của các nang lông do virus, vi khuẩn hoặc nấm. Viêm nang lông có thể xuất hiện ở mọi vùng da có lông trên cơ thể. Những tác nhân gây viêm nang lông là rối loạn tuyến dầu, tụ cầu trùng vàng, nấm men,..."
+			]
+		},
+		{
+			"tag": "viem_nang_long_symptom",
+			"patterns": ["triệu chứng bệnh viêm nang lông là gì", "dấu hiệu bệnh viêm nang lông là gì", "khi bị viêm nang lông thì xuất hiện những dấu hiệu triệu chứng gì"],
+			"responses": [
+				"Vùng da bị viêm nang gây cảm giác ngứa ngáy, đau nhức khó chịu. Có thể thấy rõ các nang lông viêm nổi nên các sẩn, có mụn mủ, vảy và vết trầy. Một số trường hợp có nhiều mụn nhỏ trắng li ti ở các nang lông. Ngoài ra, bệnh nhân có thể gặp triệu chứng khác như: lông mọc ngược vào trong da, ngứa nang lông, nổi nốt đỏ,..."
+			]
+		},
+		{
+			"tag": "viem_nang_long_treat",
+			"patterns": ["điều trị bệnh viêm nang lông như thế nào", "bệnh viêm nang lông có thể được giải quyết như thế nào", "làm sao để điều trị bệnh viêm nang lông"],
+			"responses": [
+				"Trước hết cần tìm ra nguyên nhân gây bệnh, xác định tình trạng bệnh để có phương pháp điều trị phù hợp. Có thể điều trị bằng thuốc, can thiệp tẩy lông, laser, tự chăm sóc tại nhà,..."
+			]
+		},
+		
+
+
+		{
+			"tag": "zona_define",
+			"patterns": ["bệnh zona", "zona là bệnh gì", "zona là bệnh như thế nào"],
+			"responses": [
+				"Bệnh zona thần kinh còn gọi là bệnh zona, trong dân gian còn được gọi với tên gọi là “giời leo”. Bệnh zona là bệnh nhiễm trùng da do virus thần kinh Varicella zoster (VZV) - virus gây bệnh thủy đậu, thuộc họ virus herpes gây nên. Sau khi người bệnh bị bệnh thuỷ đậu đã khỏi thì vẫn còn một số virus Varicella tồn tại ở trạng thái tiềm tàng nhưng không gây bệnh. Các virus này cư trú ở các hạch thần kinh trong nhiều tháng, nhiều năm. Khi gặp các điều kiện thuận lợi như: suy giảm miễn dịch, các sang chấn tinh thần hoặc suy nhược cơ thể... loại virus này sẽ tái hoạt. Chúng nhân lên và phát triển lan truyền ra các đầu dây thần kinh cảm giác làm tổn thương niêm mạc, da từ đó gây nên bệnh zona."
+			]
+		},
+		{
+			"tag": "zona_symptom",
+			"patterns": ["triệu chứng bệnh zona là gì", "dấu hiệu bệnh zona là gì", "khi bị zona thì xuất hiện những dấu hiệu triệu chứng gì"],
+			"responses": [
+				"Khi bị nhiễm virus Zona, người bệnh sốt từ 38-39 độ C, đau mình mẩy, đau nhức đầu, người mệt mỏi, nước tiểu vàng,... \n-Da người bệnh nổi ban đỏ đau rát, dần dần hình thành các đám mụn nước nhỏ, bọng nước tập trung thành từng chùm, dọc theo đường phân bố của dây thần kinh ngoại biên.\n-Lúc đầu mụn nước căng, dịch trong, sau màu chuyển đục, hóa mủ, sau vài ngày các mụn nước này vỡ đi, hình thành các vảy rồi bong dần để lại nhiều vết sẹo lấm tấm trắng trên da giống như bị hắc lào.\n-Người bệnh xuất hiện cảm giác ngứa, đau rát bỏng, âm ỉ, đau như kim châm, giật giật từng cơn ở vùng da nhiễm bệnh.\n-Nếu zona xuất hiện ở khu vực quanh tai, người bệnh có thể phàn nàn bị nghe kém bên tai cùng với tai bị bệnh. Trong tai xuất hiện tiếng ù như tiếng ve kêu, dế kêu.\n-Ngoài những triệu chứng trên người bệnh còn cảm thấy nhức đầu,chóng mặt, khó chịu, đi loạng choạng, sợ ánh sáng, rối loạn bài tiết mồ hôi."
+			]
+		},
+		{
+			"tag": "zona_treat",
+			"patterns": ["điều trị bệnh zona như thế nào", "bệnh zona có thể được giải quyết như thế nào", "làm sao để điều trị bệnh zona"],
+			"responses": [
+				"Thực tế không có biện pháp chữa hoàn toàn bệnh zona, nhưng bác sĩ có thể chỉ định cho bệnh nhân dùng thuốc để kiểm soát nhiễm trùng, rút ngắn thời gian lành bệnh, kháng viêm và giảm đau. Chẳng hạn như: \n-Thuốc kháng virus.\n-Thuốc giảm đau.\n-Các loại thuốc khác: Kem capsaicin, thuốc chống co giật / động kinh, thuốc kháng sinh,..."
+			]
+		},
+
+
+
+    {
+			"tag": "da_khoe_make",
+			"patterns": ["Làm sao để có da khỏe da tốt", "Bí quyết có một làn da tốt khỏe", "Cách để làn da trở nên chắc khỏe và đẹp"],
+			"responses": [
+				"Có một số bí quyết và thói quen chăm sóc da có thể giúp bạn có một làn da đẹp và khỏe mạnh. Dưới đây là một số gợi ý: Ăn uống cân đối các chất dinh dưỡng; Uống nhiều nước; Sử dụng kem chống nắng khi ra đường; Không hút thuốc; Ngủ đủ giấc; Thiết lập chế độ chăm sóc da hợp lý; Tránh căng thẳng; Tập thể dục đều đặn; Ngừng chạm tay vào mặt; Thường xuyên làm sạch và thay đổi gối đệm; Tránh tiếp xúc quá mức với ánh nắng mặt trời... Nhớ rằng, mỗi người có loại da và tình trạng da khác nhau, vì vậy cần thử nghiệm và tìm hiểu kỹ về cách chăm sóc da phù hợp với bản thân."
+			]
+		}
+  ]
+}
